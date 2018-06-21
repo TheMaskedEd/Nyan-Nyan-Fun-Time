@@ -15,6 +15,7 @@
 		818D8E1C20DAB51400D01848 /* Jobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1B20DAB51400D01848 /* Jobs.swift */; };
 		818D8E1E20DAC82400D01848 /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1D20DAC82400D01848 /* Chore.swift */; };
 		818D8E2020DAC8E600D01848 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1F20DAC8E600D01848 /* Work.swift */; };
+		818D8E2220DC319900D01848 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E2120DC319900D01848 /* Stock.swift */; };
 		81F258A020D7B72C00D3EBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2589F20D7B72C00D3EBC5 /* AppDelegate.swift */; };
 		81F258A520D7B72C00D3EBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F258A320D7B72C00D3EBC5 /* Main.storyboard */; };
 		81F258A720D7B72C00D3EBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F258A620D7B72C00D3EBC5 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		818D8E1B20DAB51400D01848 /* Jobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jobs.swift; sourceTree = "<group>"; };
 		818D8E1D20DAC82400D01848 /* Chore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
 		818D8E1F20DAC8E600D01848 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		818D8E2120DC319900D01848 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		81F2589C20D7B72C00D3EBC5 /* Nyan Nyan Fun Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nyan Nyan Fun Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F2589F20D7B72C00D3EBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F258A420D7B72C00D3EBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				818D8E1F20DAC8E600D01848 /* Work.swift */,
 				818D8E1720DAB4A300D01848 /* Status.swift */,
 				818D8E1B20DAB51400D01848 /* Jobs.swift */,
+				818D8E2120DC319900D01848 /* Stock.swift */,
 				818D8E1920DAB4C500D01848 /* Store.swift */,
 				818D8E1520DAB48000D01848 /* Activity.swift */,
 				818D8E1220DAB3CA00D01848 /* MainPage.swift */,
@@ -316,6 +319,7 @@
 			files = (
 				818D8E1620DAB48000D01848 /* Activity.swift in Sources */,
 				818D8E2020DAC8E600D01848 /* Work.swift in Sources */,
+				818D8E2220DC319900D01848 /* Stock.swift in Sources */,
 				818D8E1320DAB3CA00D01848 /* MainPage.swift in Sources */,
 				818D8E1820DAB4A300D01848 /* Status.swift in Sources */,
 				818D8E1C20DAB51400D01848 /* Jobs.swift in Sources */,
