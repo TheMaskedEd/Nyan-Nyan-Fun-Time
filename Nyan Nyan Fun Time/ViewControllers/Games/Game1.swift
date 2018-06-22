@@ -7,12 +7,11 @@
 //
 //  dont delete any of this code it is crucial for spritekit
 
-
 import UIKit
 import SpriteKit
 
 class Game1: UIViewController {
-
+    
     let sKView: SKView = {
         let view = SKView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -20,18 +19,19 @@ class Game1: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.addSubview(sKView)
         sKView.topAnchor .constraint(equalTo: view.topAnchor).isActive = true
         sKView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         sKView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         sKView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
 }
+

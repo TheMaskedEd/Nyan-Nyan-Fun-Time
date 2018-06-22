@@ -7,11 +7,10 @@
 //
 //  dont delete any of this code it is crucial for spritekit
 
-
 import UIKit
 import SpriteKit
 
-class Game2: UIViewController {
+class Game2 : UIViewController {
     
     let sKView: SKView = {
         let view = SKView()
@@ -35,3 +34,4 @@ class Game2: UIViewController {
     
     
 }
+

@@ -5,25 +5,18 @@
 //  Created by Edward Goodall on 6/18/18.
 //  Copyright © 2018 Kofu Interactive. All rights reserved.
 //
-
 import UIKit
+import SpriteKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        window = UIWindow()
-        window?.makeKeyAndVisible()
-        
-        let controller = Game1()
-        window?.rootViewController = controller
-        return true
-    }
+       return true
+        }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
