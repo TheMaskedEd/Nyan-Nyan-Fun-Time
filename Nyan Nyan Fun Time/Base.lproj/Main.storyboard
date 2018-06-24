@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -655,6 +655,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pal-dw-M4p"/>
                     </view>
+                    <connections>
+                        <outlet property="stackView1" destination="Dmm-W6-965" id="Xf8-Ps-0a1"/>
+                        <outlet property="stackView2" destination="Xf5-hv-Uxs" id="R2X-LL-c5g"/>
+                        <outlet property="stackView3" destination="mPP-Gd-pOr" id="acG-KM-S5F"/>
+                        <outlet property="stackView4" destination="jA5-3V-3k5" id="aWC-cT-H8g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DF5-VC-jua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

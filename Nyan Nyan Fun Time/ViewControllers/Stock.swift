@@ -9,11 +9,24 @@
 import UIKit
 
 class Stock: UIViewController {
-
+    //make an array, append items into it using destinationViewController (from shop). Make functions for each item, and do a for loop calling those functions by the amount of times they are in the array. Using count(array) and setting it to a variable, you can set the max amount of items in an inventory.
+    
+    
+    
+    @IBOutlet weak var stackView1: UIStackView!
+    
+    @IBOutlet weak var stackView2: UIStackView!
+    
+    @IBOutlet weak var stackView3: UIStackView!
+    
+    @IBOutlet weak var stackView4: UIStackView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
