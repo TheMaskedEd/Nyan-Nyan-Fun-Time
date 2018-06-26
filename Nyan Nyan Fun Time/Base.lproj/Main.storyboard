@@ -117,6 +117,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNC-jA-QRv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-hm-IJE">
                                 <rect key="frame" x="0.0" y="20" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -244,7 +247,7 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxS-mI-r45">
                                                 <rect key="frame" x="30" y="20" width="315" height="35"/>
-                                                <state key="normal" title="Button" backgroundImage="ui_button">
+                                                <state key="normal" title="Back" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -278,14 +281,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LV4-hm-IJE" secondAttribute="trailing" constant="20" symbolic="YES" id="0kl-4d-931"/>
+                            <constraint firstItem="QNC-jA-QRv" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="4US-Wm-sBX"/>
                             <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="i8Z-lE-mAa" secondAttribute="width" id="Kqp-ju-4Hk"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="LsZ-8g-3Dg"/>
+                            <constraint firstAttribute="bottom" secondItem="QNC-jA-QRv" secondAttribute="bottom" id="UoZ-SL-Mm6"/>
                             <constraint firstItem="ba4-Nu-Kfa" firstAttribute="trailing" secondItem="F8S-SZ-JnH" secondAttribute="trailing" id="Wsc-LA-UjT"/>
                             <constraint firstItem="ba4-Nu-Kfa" firstAttribute="trailing" secondItem="F8S-SZ-JnH" secondAttribute="trailing" id="aAI-yA-5SZ"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="bJA-HV-eWM"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="d1X-rS-28r"/>
                             <constraint firstItem="LV4-hm-IJE" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="gkw-HW-Huc"/>
                             <constraint firstItem="LV4-hm-IJE" firstAttribute="top" secondItem="ba4-Nu-Kfa" secondAttribute="top" id="iMK-rg-32k"/>
+                            <constraint firstItem="QNC-jA-QRv" firstAttribute="leading" secondItem="i8Z-lE-mAa" secondAttribute="leading" id="k3r-HI-Fuj"/>
+                            <constraint firstAttribute="trailing" secondItem="QNC-jA-QRv" secondAttribute="trailing" id="qx1-R9-L3F"/>
                             <constraint firstItem="ba4-Nu-Kfa" firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="uW8-ve-q97"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ba4-Nu-Kfa"/>
@@ -390,6 +397,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vh6-m1-jZ9">
+                                <rect key="frame" x="16" y="20" width="343" height="980"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK4-ZW-ezr">
                                 <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
@@ -410,6 +421,7 @@
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-L3-sHs">
                                                                 <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
@@ -424,6 +436,7 @@
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-fh-w5S">
                                                                 <rect key="frame" x="0.0" y="51.000000000000028" width="343" height="40.666666666666657"/>
+                                                                <color key="tintColor" red="1" green="0.27450980392156865" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
@@ -440,6 +453,7 @@
                                                                 <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
                                                             </progressView>
                                                         </subviews>
+                                                        <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="27U-rP-Prx">
                                                         <rect key="frame" x="0.0" y="515" width="343" height="91.666666666666629"/>
@@ -452,6 +466,7 @@
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-eC-FNG">
                                                                 <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
@@ -466,6 +481,7 @@
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Van-0n-l1x">
                                                                 <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
@@ -480,6 +496,7 @@
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-tS-Ac0">
                                                                 <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
@@ -557,6 +574,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leB-ov-ycd">
+                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvC-bA-2s5">
                                 <rect key="frame" x="0.0" y="70" width="414" height="666"/>
                                 <subviews>
@@ -718,6 +739,6 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jba-JZ-w2Q"/>
+        <segue reference="Sg1-Ws-gmQ"/>
     </inferredMetricsTieBreakers>
 </document>
