@@ -8,18 +8,47 @@
 
 import UIKit
 
+var inventory:[String] = []
+var money = 0
+
 class Store: UIViewController {
 
+    var price = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    
+    //buttons with their actions using buy()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func buy(productName: String, priceOfItem: Int){
+        if money >= priceOfItem{
+            inventory.append(productName)
+        }
+        else{
+            //figure out how to make a "not enough money" type thing
+        }
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

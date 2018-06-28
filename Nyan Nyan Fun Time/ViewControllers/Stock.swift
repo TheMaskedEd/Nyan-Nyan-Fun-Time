@@ -22,11 +22,48 @@ class Stock: UIViewController {
     @IBOutlet weak var stackView4: UIStackView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        var stackOrder = [stackView1, stackView2, stackView3, stackView4]
+        var stackInt = 0
+        let currentStackView = stackOrder[stackInt]
+        print(inventory.count)
+        
+        
+        func button(itemName: String){
+            let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+            button.backgroundColor = .green
+            button.setTitle("Test Button", for: .normal)
+            
+            //switch case with items here; do after item images and
+            
+            
+            
+            button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+            
+            self.view.addSubview(currentStackView!)
+            
+        }
+        
+        for x in inventory{
+            switch x{
+            case "test":
+                if currentStackView?.arrangedSubviews.count == 3{
+                    stackInt += 1
+                }
+                print("works")
+            
+            default:
+                print("")
+            }
+        }
+        
         
         // Do any additional setup after loading the view.
-        
+    }
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button tapped")
     }
 
     override func didReceiveMemoryWarning() {
