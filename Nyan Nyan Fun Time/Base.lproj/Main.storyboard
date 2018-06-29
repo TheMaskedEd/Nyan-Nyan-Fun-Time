@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,26 +117,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello, what can I do for you today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-nt-TJE">
-                                <rect key="frame" x="40" y="589" width="335" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I do for you today, Sir?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-nt-TJE">
+                                <rect key="frame" x="55" y="589" width="320" height="26.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q9a-KQ-hHQ">
-                                <rect key="frame" x="11" y="665" width="392" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q9a-KQ-hHQ">
+                                <rect key="frame" x="11" y="639.33333333333337" width="392" height="34"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tg-HW-6MJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tg-HW-6MJ">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Check Products"/>
+                                        <state key="normal" title="Products"/>
                                         <connections>
                                             <segue destination="iLV-hv-Yhm" kind="presentation" modalTransitionStyle="crossDissolve" id="AeO-uo-Z7F"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-N2-2q3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-N2-2q3">
                                         <rect key="frame" x="131" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Inventory"/>
@@ -144,7 +142,7 @@
                                             <segue destination="0un-Rj-HKZ" kind="presentation" id="Nza-uV-bVT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-Zl-OXv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-Zl-OXv">
                                         <rect key="frame" x="262" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Leave Shop"/>
@@ -156,6 +154,16 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hrx-go-1BK" firstAttribute="bottom" secondItem="Q9a-KQ-hHQ" secondAttribute="bottom" constant="62.670000000000002" id="MHQ-5J-aeT"/>
+                            <constraint firstItem="Q21-nt-TJE" firstAttribute="top" secondItem="hrx-go-1BK" secondAttribute="top" constant="569" id="QfZ-PU-8WT"/>
+                            <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="top" secondItem="Q21-nt-TJE" secondAttribute="bottom" constant="24" id="dHk-27-QkQ"/>
+                            <constraint firstItem="Q21-nt-TJE" firstAttribute="leading" secondItem="hrx-go-1BK" secondAttribute="leading" constant="55" id="fJD-Ag-D9c"/>
+                            <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="leading" secondItem="hrx-go-1BK" secondAttribute="leading" constant="11" id="lMz-p3-NHX"/>
+                            <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="top" secondItem="Q21-nt-TJE" secondAttribute="bottom" constant="24" id="q7T-cF-ieW"/>
+                            <constraint firstItem="hrx-go-1BK" firstAttribute="trailing" secondItem="Q9a-KQ-hHQ" secondAttribute="trailing" constant="11" id="soL-h3-DY4"/>
+                            <constraint firstItem="hrx-go-1BK" firstAttribute="trailing" secondItem="Q21-nt-TJE" secondAttribute="trailing" constant="39" id="wJ1-du-vUe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hrx-go-1BK"/>
                     </view>
                 </viewController>
@@ -737,6 +745,9 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sg1-Ws-gmQ"/>
+        <segue reference="AeO-uo-Z7F"/>
+        <segue reference="Nza-uV-bVT"/>
+        <segue reference="I0h-MS-zPc"/>
+        <segue reference="8uo-PU-E0r"/>
     </inferredMetricsTieBreakers>
 </document>
