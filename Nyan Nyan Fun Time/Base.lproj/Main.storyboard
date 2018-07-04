@@ -1,38 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ARCADECLASSIC.TTF">
+            <string>ArcadeClassic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainPage" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_background.1" translatesAutoresizingMaskIntoConstraints="NO" id="Zq4-mX-xjU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-Z6-FCs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_cat.1" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Aq-pZD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="689.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="761"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-Kj-kGo">
-                                        <rect key="frame" x="0.0" y="679.33333333333337" width="414" height="56.666666666666629"/>
+                                        <rect key="frame" x="0.0" y="748.66666666666663" width="375" height="63.333333333333371"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0M-dF-Se6">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="63.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                                <state key="normal" title="Stock" backgroundImage="ui_button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0un-Rj-HKZ" kind="presentation" id="SMI-8x-dPU"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfW-zQ-8dp">
-                                                <rect key="frame" x="0.0" y="0.0" width="102" height="56.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <rect key="frame" x="75.333333333333343" y="0.0" width="73.333333333333343" height="63.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
                                                 <state key="normal" title="Activity" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -42,8 +59,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb8-xR-lFK">
-                                                <rect key="frame" x="104" y="0.0" width="102" height="56.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <rect key="frame" x="150.66666666666666" y="0.0" width="73.666666666666657" height="63.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
                                                 <state key="normal" title="Status" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,8 +70,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D7-2v-evy">
-                                                <rect key="frame" x="208" y="0.0" width="102" height="56.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <rect key="frame" x="226.33333333333334" y="0.0" width="73.333333333333343" height="63.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
                                                 <state key="normal" title="Store" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,8 +81,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1s-dD-CQK">
-                                                <rect key="frame" x="312" y="0.0" width="102" height="56.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <rect key="frame" x="301.66666666666669" y="0.0" width="73.333333333333314" height="63.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
                                                 <state key="normal" title="Job" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,43 +120,51 @@
             <objects>
                 <viewController id="rhP-gK-JbA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Nf-kf-oJp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What can I do for you today, Sir?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-nt-TJE">
-                                <rect key="frame" x="55" y="589" width="320" height="26.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What  can  I  do  for  you  today..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-nt-TJE">
+                                <rect key="frame" x="39" y="613.33333333333337" width="297" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ueo-nV-Na4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="2"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q9a-KQ-hHQ">
-                                <rect key="frame" x="11" y="639.33333333333337" width="392" height="34"/>
+                                <rect key="frame" x="11" y="677.33333333333337" width="353" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tg-HW-6MJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="38"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Products" backgroundImage="ui_button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="iLV-hv-Yhm" kind="presentation" modalTransitionStyle="crossDissolve" id="AeO-uo-Z7F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-N2-2q3">
-                                        <rect key="frame" x="131" y="0.0" width="130" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="118" y="0.0" width="117" height="38"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Inventory" backgroundImage="ui_button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="0un-Rj-HKZ" kind="presentation" id="Nza-uV-bVT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-Zl-OXv">
-                                        <rect key="frame" x="262" y="0.0" width="130" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="236" y="0.0" width="117" height="38"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Leave Shop" backgroundImage="ui_button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="8uo-PU-E0r"/>
@@ -150,10 +175,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Q21-nt-TJE" secondAttribute="bottom" constant="124.67" id="7iX-8g-hsP"/>
                             <constraint firstItem="hrx-go-1BK" firstAttribute="bottom" secondItem="Q9a-KQ-hHQ" secondAttribute="bottom" constant="62.670000000000002" id="MHQ-5J-aeT"/>
-                            <constraint firstItem="Q21-nt-TJE" firstAttribute="top" secondItem="hrx-go-1BK" secondAttribute="top" constant="569" id="QfZ-PU-8WT"/>
-                            <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="top" secondItem="Q21-nt-TJE" secondAttribute="bottom" constant="24" id="dHk-27-QkQ"/>
-                            <constraint firstItem="Q21-nt-TJE" firstAttribute="leading" secondItem="hrx-go-1BK" secondAttribute="leading" constant="55" id="fJD-Ag-D9c"/>
+                            <constraint firstItem="Q21-nt-TJE" firstAttribute="leading" secondItem="hrx-go-1BK" secondAttribute="leading" constant="39" id="fEH-Ez-y5M"/>
                             <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="leading" secondItem="hrx-go-1BK" secondAttribute="leading" constant="11" id="lMz-p3-NHX"/>
                             <constraint firstItem="Q9a-KQ-hHQ" firstAttribute="top" secondItem="Q21-nt-TJE" secondAttribute="bottom" constant="24" id="q7T-cF-ieW"/>
                             <constraint firstItem="hrx-go-1BK" firstAttribute="trailing" secondItem="Q9a-KQ-hHQ" secondAttribute="trailing" constant="11" id="soL-h3-DY4"/>
@@ -178,8 +202,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-hm-IJE">
-                                <rect key="frame" x="0.0" y="20" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="0.0" y="44" width="191" height="79"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                <state key="normal" title="back" backgroundImage="ui_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-SZ-JnH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
@@ -191,124 +219,274 @@
                                                 <rect key="frame" x="16" y="70" width="343" height="1430"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnF-ij-EbJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="143"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="143"/>
+                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Nq-z9V">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qym-8e-R6u">
                                                         <rect key="frame" x="0.0" y="143" width="343" height="143"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-jb-hAD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="143"/>
-                                                                <state key="normal" title="Basic (200)"/>
-                                                                <connections>
-                                                                    <action selector="foodBasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="90R-Mh-zwo"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
-                                                                <rect key="frame" x="133.66666666666666" y="0.0" width="81" height="143"/>
-                                                                <state key="normal" title="Good (400)"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-2z-Ncg">
-                                                                <rect key="frame" x="273" y="0.0" width="70" height="143"/>
-                                                                <state key="normal" title="Best(450)"/>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8wA-2T-BBc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_basic" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-q6-b6T">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_good" translatesAutoresizingMaskIntoConstraints="NO" id="LXs-hv-oIz">
+                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_best" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-V6-Wyo">
+                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="100"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="ZgU-7q-yHw"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Nq-z9V">
+                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-jb-hAD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Basic (200)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="foodBasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="90R-Mh-zwo"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
+                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Good (400)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-2z-Ncg">
+                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Best(450)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-NK-iGN">
-                                                        <rect key="frame" x="0.0" y="286" width="30.333333333333332" height="143"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="286" width="77" height="143"/>
+                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-7G-9vU">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eaX-YA-sEk">
                                                         <rect key="frame" x="0.0" y="429" width="343" height="143"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-z9-v3J">
-                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="143"/>
-                                                                <state key="normal" title="Good(600)"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-dp-SrU">
-                                                                <rect key="frame" x="76" y="0.0" width="267" height="143"/>
-                                                                <state key="normal" title="Best(1000)"/>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-Z3-MWk">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed-good" translatesAutoresizingMaskIntoConstraints="NO" id="cME-M4-i1d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed_best" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-Ko-hM8">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="GXo-Jz-nXX"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-7G-9vU">
+                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-z9-v3J">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Good(600)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-dp-SrU">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Best(1000)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shampoo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-ze-3Gl">
-                                                        <rect key="frame" x="0.0" y="572" width="73" height="143"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="572" width="178.33333333333334" height="143"/>
+                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-l3-0Gt">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-VJ-O6S">
                                                         <rect key="frame" x="0.0" y="715" width="343" height="143"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AER-Kt-cBH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="73" height="143"/>
-                                                                <state key="normal" title="Basic(150)"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-Dg-PCO">
-                                                                <rect key="frame" x="134.33333333333334" y="0.0" width="76" height="143"/>
-                                                                <state key="normal" title="Good(250)"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74z-vc-y2g">
-                                                                <rect key="frame" x="273" y="0.0" width="70" height="143"/>
-                                                                <state key="normal" title="Best(350)"/>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yaX-Fo-Dwo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_basic" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-EE-wLg">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_good" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-nw-Yeg">
+                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_best" translatesAutoresizingMaskIntoConstraints="NO" id="jSq-w4-7Cb">
+                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="100"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="8vd-8b-CHp"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-l3-0Gt">
+                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AER-Kt-cBH">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Basic(150)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-Dg-PCO">
+                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Good(250)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74z-vc-y2g">
+                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Best(350)" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brush" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34n-wr-eG7">
-                                                        <rect key="frame" x="0.0" y="858" width="44.666666666666664" height="143"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="858" width="127.66666666666667" height="143"/>
+                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-m5-sG9">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-Og-U5b">
                                                         <rect key="frame" x="0.0" y="1001" width="343" height="143"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-3h-Vwv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-i2-qFz">
-                                                                <rect key="frame" x="46" y="0.0" width="297" height="143"/>
-                                                                <state key="normal" title="Button"/>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-lm-ey0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16J-7I-C7D">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-4Q-rKD">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="brN-qm-Im9"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-m5-sG9">
+                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-3h-Vwv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Button" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-i2-qFz">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Button" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail Clippers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-vL-xT2">
-                                                        <rect key="frame" x="0.0" y="1144" width="96.666666666666671" height="143"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="1144" width="310.66666666666669" height="143"/>
+                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ell-y0-nXY">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uZ7-33-X7i">
                                                         <rect key="frame" x="0.0" y="1287" width="343" height="143"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="904-Na-jpF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daM-IP-2RE">
-                                                                <rect key="frame" x="46" y="0.0" width="297" height="143"/>
-                                                                <state key="normal" title="Button"/>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ell-y0-nXY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GBb-Z1-bFd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Kr-jrp">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BqP-TF-aUV">
+                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="904-Na-jpF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Button" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daM-IP-2RE">
+                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                        <state key="normal" title="Button" backgroundImage="ui_button">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="hO2-m5-sG9" secondAttribute="trailing" id="K03-rQ-MDJ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="GPb-l3-0Gt" secondAttribute="trailing" id="Qwa-Bf-FQ9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="0g7-7G-9vU" secondAttribute="trailing" id="UTA-lf-CVh"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ell-y0-nXY" secondAttribute="trailing" id="nTT-4A-rbc"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vC8-Nq-z9V" secondAttribute="trailing" id="ol1-y1-LGF"/>
-                                                </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxS-mI-r45">
-                                                <rect key="frame" x="30" y="20" width="315" height="35"/>
+                                                <rect key="frame" x="92" y="20" width="191" height="35"/>
                                                 <state key="normal" title="Back" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="rhP-gK-JbA" kind="presentation" modalTransitionStyle="crossDissolve" id="I0h-MS-zPc"/>
@@ -321,12 +499,10 @@
                                             <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" constant="16" id="9p7-Zm-N6e"/>
                                             <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" constant="16" id="EZW-dT-7H0"/>
                                             <constraint firstItem="sxS-mI-r45" firstAttribute="top" secondItem="PLZ-yg-hB1" secondAttribute="top" constant="20" id="Ibd-JV-w4t"/>
-                                            <constraint firstItem="sxS-mI-r45" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" constant="30" id="KAK-i6-pNp"/>
                                             <constraint firstAttribute="height" constant="1500" id="PQ7-eT-kgC"/>
                                             <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="Qk1-4n-odo"/>
                                             <constraint firstItem="sxS-mI-r45" firstAttribute="centerX" secondItem="PLZ-yg-hB1" secondAttribute="centerX" id="WEJ-qm-W5S"/>
                                             <constraint firstItem="BQB-ud-7nX" firstAttribute="top" secondItem="PLZ-yg-hB1" secondAttribute="top" constant="70" id="hFE-O5-EhJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="sxS-mI-r45" secondAttribute="trailing" constant="30" id="xVh-6q-HLk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -334,6 +510,7 @@
                                     <constraint firstAttribute="trailing" secondItem="PLZ-yg-hB1" secondAttribute="trailing" id="0QU-ic-y2Z"/>
                                     <constraint firstItem="PLZ-yg-hB1" firstAttribute="top" secondItem="F8S-SZ-JnH" secondAttribute="top" id="DRd-bf-TmT"/>
                                     <constraint firstItem="PLZ-yg-hB1" firstAttribute="leading" secondItem="F8S-SZ-JnH" secondAttribute="leading" id="d1k-mr-9Fa"/>
+                                    <constraint firstAttribute="height" secondItem="PLZ-yg-hB1" secondAttribute="height" id="rJd-Qr-76G"/>
                                     <constraint firstAttribute="bottom" secondItem="PLZ-yg-hB1" secondAttribute="bottom" id="wVc-Qk-ze1"/>
                                 </constraints>
                             </scrollView>
@@ -342,6 +519,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LV4-hm-IJE" secondAttribute="trailing" constant="20" symbolic="YES" id="0kl-4d-931"/>
                             <constraint firstItem="QNC-jA-QRv" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="4US-Wm-sBX"/>
+                            <constraint firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="BNi-mF-cSg"/>
                             <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="i8Z-lE-mAa" secondAttribute="width" id="Kqp-ju-4Hk"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="LsZ-8g-3Dg"/>
                             <constraint firstAttribute="bottom" secondItem="QNC-jA-QRv" secondAttribute="bottom" id="UoZ-SL-Mm6"/>
@@ -353,7 +531,6 @@
                             <constraint firstItem="LV4-hm-IJE" firstAttribute="top" secondItem="ba4-Nu-Kfa" secondAttribute="top" id="iMK-rg-32k"/>
                             <constraint firstItem="QNC-jA-QRv" firstAttribute="leading" secondItem="i8Z-lE-mAa" secondAttribute="leading" id="k3r-HI-Fuj"/>
                             <constraint firstAttribute="trailing" secondItem="QNC-jA-QRv" secondAttribute="trailing" id="qx1-R9-L3F"/>
-                            <constraint firstItem="ba4-Nu-Kfa" firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="uW8-ve-q97"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ba4-Nu-Kfa"/>
                     </view>
@@ -375,42 +552,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808" y="1254"/>
+            <point key="canvasLocation" x="1807.2" y="1253.9408866995075"/>
         </scene>
         <!--Activity-->
         <scene sceneID="rA5-pG-isb">
             <objects>
                 <viewController id="vWC-Xb-igb" customClass="Activity" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aeZ-sQ-VWJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0qN-0B-t52">
-                                <rect key="frame" x="16" y="70" width="382" height="666"/>
+                                <rect key="frame" x="16" y="94" width="343" height="684"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuL-Mc-WEq">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="155.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="159.66666666666666"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="chore"/>
                                         <connections>
                                             <segue destination="hdS-Sw-f8z" kind="presentation" id="q3S-JG-JFP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dr-UZ-Sr8">
-                                        <rect key="frame" x="0.0" y="170.33333333333331" width="382" height="155.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="174.66666666666669" width="343" height="160"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Paw Fighter"/>
                                         <connections>
                                             <segue destination="qnx-9l-K1a" kind="presentation" id="haP-lx-sbF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWh-Uy-cxT">
-                                        <rect key="frame" x="0.0" y="340.66666666666669" width="382" height="155"/>
+                                        <rect key="frame" x="0.0" y="349.66666666666669" width="343" height="159.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Pattycake"/>
                                         <connections>
                                             <segue destination="NU9-hp-l7p" kind="presentation" id="ejw-D4-07o"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-Q4-Ruj">
-                                        <rect key="frame" x="0.0" y="510.66666666666657" width="382" height="155.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="524.33333333333337" width="343" height="159.66666666666663"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                         <state key="normal" title="Formula Nyan"/>
                                         <connections>
                                             <segue destination="IAM-UU-Y37" kind="presentation" id="ec1-OT-hrb"/>
@@ -419,9 +600,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL4-OE-Qnp">
-                                <rect key="frame" x="30" y="20" width="354" height="35"/>
-                                <state key="normal" title="Back" backgroundImage="ui_button">
-                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="30" y="44" width="315" height="35"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                <state key="normal" title="back" backgroundImage="ui_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -453,7 +635,7 @@
             <objects>
                 <viewController id="hdS-Sw-f8z" customClass="Chore" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BPg-gG-vhX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JvJ-GZ-sq6"/>
@@ -471,105 +653,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vh6-m1-jZ9">
-                                <rect key="frame" x="16" y="20" width="343" height="980"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background_wood" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-SX-nan">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NK4-ZW-ezr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6U-9X-gTh">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="lEs-LX-KuK">
-                                                <rect key="frame" x="16" y="50" width="343" height="950"/>
+                                                <rect key="frame" x="16" y="50" width="343" height="894"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L6R-d2-MAr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="91.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="82.333333333333329"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hunger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLW-cr-YhN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLW-cr-YhN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-L3-sHs">
-                                                                <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333329" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ETr-W9-N1z">
-                                                        <rect key="frame" x="0.0" y="171.66666666666666" width="343" height="91.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="162.33333333333334" width="343" height="82.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xr4-Wf-hxz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-fh-w5S">
-                                                                <rect key="frame" x="0.0" y="51.000000000000028" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333343" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980392156865" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="52t-oV-S6V">
-                                                        <rect key="frame" x="0.0" y="343.33333333333331" width="343" height="91.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="324.66666666666669" width="343" height="82.333333333333314"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kie-tS-Laf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yon-hZ-jlU">
-                                                                <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333314" width="343" height="36"/>
                                                             </progressView>
                                                         </subviews>
                                                         <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="27U-rP-Prx">
-                                                        <rect key="frame" x="0.0" y="515" width="343" height="91.666666666666629"/>
+                                                        <rect key="frame" x="0.0" y="486.99999999999994" width="343" height="82.333333333333314"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hygiene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EB-Kn-PzA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-eC-FNG">
-                                                                <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333371" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Ql-00-0yf">
-                                                        <rect key="frame" x="0.0" y="686.66666666666663" width="343" height="91.666666666666629"/>
+                                                        <rect key="frame" x="0.0" y="649.33333333333337" width="343" height="82.333333333333371"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVd-zG-blw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Van-0n-l1x">
-                                                                <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333258" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lJO-0z-QO7">
-                                                        <rect key="frame" x="0.0" y="858.33333333333337" width="343" height="91.666666666666629"/>
+                                                        <rect key="frame" x="0.0" y="811.66666666666663" width="343" height="82.333333333333371"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu9-Gl-Qci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="41"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hunger" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu9-Gl-Qci">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="36.333333333333336"/>
+                                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
                                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-tS-Ac0">
-                                                                <rect key="frame" x="0.0" y="51" width="343" height="40.666666666666657"/>
+                                                                <rect key="frame" x="0.0" y="46.333333333333371" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
                                                         </subviews>
@@ -578,7 +772,8 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-kX-GXw">
                                                 <rect key="frame" x="30" y="0.0" width="315" height="35"/>
-                                                <state key="normal" title="Back" backgroundImage="ui_button">
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                <state key="normal" title="back" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -587,20 +782,21 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="lEs-LX-KuK" firstAttribute="top" secondItem="u6U-9X-gTh" secondAttribute="top" constant="50" id="B2h-wp-t5q"/>
                                             <constraint firstItem="lEs-LX-KuK" firstAttribute="leading" secondItem="u6U-9X-gTh" secondAttribute="leading" constant="16" id="Gb2-YM-jro"/>
-                                            <constraint firstAttribute="bottom" secondItem="lEs-LX-KuK" secondAttribute="bottom" id="bZa-wA-ZsY"/>
                                             <constraint firstAttribute="trailing" secondItem="lEs-LX-KuK" secondAttribute="trailing" constant="16" id="esX-H3-aun"/>
                                             <constraint firstItem="xfS-kX-GXw" firstAttribute="top" secondItem="u6U-9X-gTh" secondAttribute="top" id="fyP-eg-rcg"/>
                                             <constraint firstItem="lEs-LX-KuK" firstAttribute="top" secondItem="xfS-kX-GXw" secondAttribute="bottom" constant="15" id="in0-OE-6Gl"/>
                                             <constraint firstItem="xfS-kX-GXw" firstAttribute="leading" secondItem="u6U-9X-gTh" secondAttribute="leading" constant="30" id="kR0-hT-iUk"/>
+                                            <constraint firstAttribute="bottom" secondItem="lEs-LX-KuK" secondAttribute="bottom" constant="56" id="nog-aE-HFH"/>
                                             <constraint firstAttribute="height" constant="1000" id="rAW-Ox-rkO"/>
                                             <constraint firstAttribute="trailing" secondItem="xfS-kX-GXw" secondAttribute="trailing" constant="30" id="sdB-5n-H0T"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="u6U-9X-gTh" firstAttribute="top" secondItem="NK4-ZW-ezr" secondAttribute="top" id="PlM-4L-abn"/>
                                     <constraint firstItem="u6U-9X-gTh" firstAttribute="centerX" secondItem="NK4-ZW-ezr" secondAttribute="centerX" id="Xuq-0I-3TT"/>
@@ -612,9 +808,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="NK4-ZW-ezr" firstAttribute="top" secondItem="sOI-jn-yeC" secondAttribute="top" constant="20" id="TLQ-qO-1Ck"/>
                             <constraint firstAttribute="trailing" secondItem="NK4-ZW-ezr" secondAttribute="trailing" id="c87-C0-2S8"/>
                             <constraint firstItem="NK4-ZW-ezr" firstAttribute="bottom" secondItem="XNm-0K-zNj" secondAttribute="bottom" id="eos-jO-zzG"/>
-                            <constraint firstItem="NK4-ZW-ezr" firstAttribute="top" secondItem="XNm-0K-zNj" secondAttribute="top" id="rab-4H-KXU"/>
                             <constraint firstItem="NK4-ZW-ezr" firstAttribute="leading" secondItem="sOI-jn-yeC" secondAttribute="leading" id="sVs-Yu-cba"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XNm-0K-zNj"/>
@@ -630,7 +826,7 @@
             <objects>
                 <viewController id="Pw6-xn-Teu" customClass="work" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U4S-OI-vkY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YkQ-GN-xhF"/>
@@ -645,7 +841,7 @@
             <objects>
                 <viewController id="0un-Rj-HKZ" customClass="Stock" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qbi-Zd-PiH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leB-ov-ycd">
@@ -653,25 +849,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvC-bA-2s5">
-                                <rect key="frame" x="0.0" y="70" width="414" height="666"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="684"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-W6-965">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="151.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xf5-hv-Uxs">
-                                        <rect key="frame" x="0.0" y="171.66666666666663" width="414" height="151.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="176" width="375" height="156"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-Gd-pOr">
-                                        <rect key="frame" x="0.0" y="343" width="414" height="151.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="352" width="375" height="156"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-3V-3k5">
-                                        <rect key="frame" x="0.0" y="514.66666666666663" width="414" height="151.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="528" width="375" height="156"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3V-E1-oEF">
-                                <rect key="frame" x="30" y="20" width="354" height="35"/>
-                                <state key="normal" title="Button" backgroundImage="ui_button">
+                                <rect key="frame" x="30" y="44" width="315" height="35"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                <state key="normal" title="back" backgroundImage="ui_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -710,7 +907,7 @@
             <objects>
                 <viewController id="qnx-9l-K1a" customClass="Game1" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kzH-I4-Zbo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="q6M-df-S35"/>
@@ -725,7 +922,7 @@
             <objects>
                 <viewController id="NU9-hp-l7p" customClass="Game2" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zkd-mU-c2p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rgd-jo-5s8"/>
@@ -740,7 +937,7 @@
             <objects>
                 <viewController id="IAM-UU-Y37" customClass="Game3" customModule="Nyan_Nyan_Fun_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YCX-fc-zJ8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pDL-32-k2L"/>
@@ -752,12 +949,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background_wood" width="626" height="396"/>
+        <image name="bed-good" width="500" height="300"/>
+        <image name="bed_best" width="930" height="930"/>
+        <image name="food_basic" width="2700" height="1504"/>
+        <image name="food_best" width="413" height="323"/>
+        <image name="food_good" width="1882" height="1681"/>
+        <image name="shampoo_basic" width="1024" height="1024"/>
+        <image name="shampoo_best" width="480" height="727"/>
+        <image name="shampoo_good" width="1200" height="1200"/>
         <image name="test_background.1" width="400" height="533"/>
         <image name="test_cat.1" width="1280" height="1180"/>
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4lv-Un-VNE"/>
-        <segue reference="8uo-PU-E0r"/>
+        <segue reference="Nza-uV-bVT"/>
+        <segue reference="I0h-MS-zPc"/>
+        <segue reference="Sg1-Ws-gmQ"/>
     </inferredMetricsTieBreakers>
 </document>

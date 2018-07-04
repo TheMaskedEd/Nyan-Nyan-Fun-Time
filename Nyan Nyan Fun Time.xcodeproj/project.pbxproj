@@ -16,6 +16,9 @@
 		818D8E1E20DAC82400D01848 /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1D20DAC82400D01848 /* Chore.swift */; };
 		818D8E2020DAC8E600D01848 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1F20DAC8E600D01848 /* Work.swift */; };
 		818D8E2220DC319900D01848 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E2120DC319900D01848 /* Stock.swift */; };
+		81991A8920ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 81991A8820ECF3CC00DDA29E /* ARCADECLASSIC.TTF */; };
+		81991A8A20ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 81991A8820ECF3CC00DDA29E /* ARCADECLASSIC.TTF */; };
+		81991A8B20ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 81991A8820ECF3CC00DDA29E /* ARCADECLASSIC.TTF */; };
 		81F258A020D7B72C00D3EBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2589F20D7B72C00D3EBC5 /* AppDelegate.swift */; };
 		81F258A520D7B72C00D3EBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F258A320D7B72C00D3EBC5 /* Main.storyboard */; };
 		81F258A720D7B72C00D3EBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F258A620D7B72C00D3EBC5 /* Assets.xcassets */; };
@@ -54,6 +57,7 @@
 		818D8E1D20DAC82400D01848 /* Chore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
 		818D8E1F20DAC8E600D01848 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		818D8E2120DC319900D01848 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		81991A8820ECF3CC00DDA29E /* ARCADECLASSIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ARCADECLASSIC.TTF; path = ../../../../Downloads/arcadeclassic/ARCADECLASSIC.TTF; sourceTree = "<group>"; };
 		81F2589C20D7B72C00D3EBC5 /* Nyan Nyan Fun Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nyan Nyan Fun Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F2589F20D7B72C00D3EBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F258A420D7B72C00D3EBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +135,14 @@
 			path = Games;
 			sourceTree = "<group>";
 		};
+		81991A8620ECF34000DDA29E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				81991A8820ECF3CC00DDA29E /* ARCADECLASSIC.TTF */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		81F2589320D7B72C00D3EBC5 = {
 			isa = PBXGroup;
 			children = (
@@ -157,9 +169,10 @@
 			children = (
 				81F2589F20D7B72C00D3EBC5 /* AppDelegate.swift */,
 				8166818920D7DF0D00C3051A /* ViewControllers */,
+				81991A8620ECF34000DDA29E /* fonts */,
 				81F258A320D7B72C00D3EBC5 /* Main.storyboard */,
-				81F258A620D7B72C00D3EBC5 /* Assets.xcassets */,
 				81F258A820D7B72C00D3EBC5 /* LaunchScreen.storyboard */,
+				81F258A620D7B72C00D3EBC5 /* Assets.xcassets */,
 				81F258AB20D7B72C00D3EBC5 /* Info.plist */,
 			);
 			path = "Nyan Nyan Fun Time";
@@ -293,6 +306,7 @@
 				81F258AA20D7B72C00D3EBC5 /* LaunchScreen.storyboard in Resources */,
 				81F258A720D7B72C00D3EBC5 /* Assets.xcassets in Resources */,
 				81F258A520D7B72C00D3EBC5 /* Main.storyboard in Resources */,
+				81991A8920ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81991A8A20ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81991A8B20ECF3CD00DDA29E /* ARCADECLASSIC.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
