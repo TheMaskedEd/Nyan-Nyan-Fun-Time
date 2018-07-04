@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,19 +30,8 @@
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-Kj-kGo">
                                         <rect key="frame" x="0.0" y="679.33333333333337" width="414" height="56.666666666666629"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0M-dF-Se6">
-                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="56.666666666666664"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                                <state key="normal" title="Stock" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="0un-Rj-HKZ" kind="presentation" id="SMI-8x-dPU"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfW-zQ-8dp">
-                                                <rect key="frame" x="83.333333333333329" y="0.0" width="80.999999999999986" height="56.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="56.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                 <state key="normal" title="Activity" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,7 +42,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb8-xR-lFK">
-                                                <rect key="frame" x="166.33333333333334" y="0.0" width="81.333333333333343" height="56.666666666666664"/>
+                                                <rect key="frame" x="104" y="0.0" width="102" height="56.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                 <state key="normal" title="Status" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +53,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D7-2v-evy">
-                                                <rect key="frame" x="249.66666666666663" y="0.0" width="81" height="56.666666666666664"/>
+                                                <rect key="frame" x="208" y="0.0" width="102" height="56.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                 <state key="normal" title="Store" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +64,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1s-dD-CQK">
-                                                <rect key="frame" x="332.66666666666669" y="0.0" width="81.333333333333314" height="56.666666666666664"/>
+                                                <rect key="frame" x="312" y="0.0" width="102" height="56.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                 <state key="normal" title="Job" backgroundImage="ui_button">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,7 +118,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tg-HW-6MJ">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Products"/>
+                                        <state key="normal" title="Products" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="iLV-hv-Yhm" kind="presentation" modalTransitionStyle="crossDissolve" id="AeO-uo-Z7F"/>
                                         </connections>
@@ -137,7 +128,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4d-N2-2q3">
                                         <rect key="frame" x="131" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Inventory"/>
+                                        <state key="normal" title="Inventory" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="0un-Rj-HKZ" kind="presentation" id="Nza-uV-bVT"/>
                                         </connections>
@@ -145,7 +138,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-Zl-OXv">
                                         <rect key="frame" x="262" y="0.0" width="130" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Leave Shop"/>
+                                        <state key="normal" title="Leave Shop" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="8uo-PU-E0r"/>
                                         </connections>
@@ -762,8 +757,7 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nza-uV-bVT"/>
-        <segue reference="I0h-MS-zPc"/>
-        <segue reference="YqZ-ox-SlI"/>
+        <segue reference="4lv-Un-VNE"/>
+        <segue reference="8uo-PU-E0r"/>
     </inferredMetricsTieBreakers>
 </document>
