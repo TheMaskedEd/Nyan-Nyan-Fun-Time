@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -195,31 +195,34 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BQB-ud-7nX">
                                                 <rect key="frame" x="16" y="70" width="343" height="1430"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnF-ij-EbJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="143"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnF-ij-EbJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39" height="143"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Nq-z9V">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Nq-z9V">
                                                         <rect key="frame" x="0.0" y="143" width="343" height="143"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-jb-hAD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="143"/>
+                                                                <state key="normal" title="Basic (200)"/>
+                                                                <connections>
+                                                                    <action selector="foodBasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="90R-Mh-zwo"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
-                                                                <rect key="frame" x="148.66666666666666" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="133.66666666666666" y="0.0" width="81" height="143"/>
+                                                                <state key="normal" title="Good (400)"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-2z-Ncg">
-                                                                <rect key="frame" x="297" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="273" y="0.0" width="70" height="143"/>
+                                                                <state key="normal" title="Best(450)"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-NK-iGN">
-                                                        <rect key="frame" x="0.0" y="286" width="41.666666666666664" height="143"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-NK-iGN">
+                                                        <rect key="frame" x="0.0" y="286" width="30.333333333333332" height="143"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -228,17 +231,17 @@
                                                         <rect key="frame" x="0.0" y="429" width="343" height="143"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-z9-v3J">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="143"/>
+                                                                <state key="normal" title="Good(600)"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-dp-SrU">
-                                                                <rect key="frame" x="46" y="0.0" width="297" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="76" y="0.0" width="267" height="143"/>
+                                                                <state key="normal" title="Best(1000)"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-ze-3Gl">
-                                                        <rect key="frame" x="0.0" y="572" width="41.666666666666664" height="143"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shampoo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-ze-3Gl">
+                                                        <rect key="frame" x="0.0" y="572" width="73" height="143"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -247,21 +250,21 @@
                                                         <rect key="frame" x="0.0" y="715" width="343" height="143"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AER-Kt-cBH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="73" height="143"/>
+                                                                <state key="normal" title="Basic(150)"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-Dg-PCO">
-                                                                <rect key="frame" x="148.66666666666666" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="134.33333333333334" y="0.0" width="76" height="143"/>
+                                                                <state key="normal" title="Good(250)"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74z-vc-y2g">
-                                                                <rect key="frame" x="297" y="0.0" width="46" height="143"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <rect key="frame" x="273" y="0.0" width="70" height="143"/>
+                                                                <state key="normal" title="Best(350)"/>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34n-wr-eG7">
-                                                        <rect key="frame" x="0.0" y="858" width="41.666666666666664" height="143"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brush" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34n-wr-eG7">
+                                                        <rect key="frame" x="0.0" y="858" width="44.666666666666664" height="143"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -279,8 +282,8 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-vL-xT2">
-                                                        <rect key="frame" x="0.0" y="1144" width="41.666666666666664" height="143"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail Clippers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-vL-xT2">
+                                                        <rect key="frame" x="0.0" y="1144" width="96.666666666666671" height="143"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -360,6 +363,20 @@
                         <viewLayoutGuide key="safeArea" id="ba4-Nu-Kfa"/>
                     </view>
                     <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="bedBestText" destination="ksV-dp-SrU" id="uVk-sH-7oc"/>
+                        <outlet property="bedGoodText" destination="KbV-z9-v3J" id="oqC-6y-X1s"/>
+                        <outlet property="brushBestText" destination="awF-i2-qFz" id="Phq-U1-VW5"/>
+                        <outlet property="brushGoodText" destination="YOb-3h-Vwv" id="BsI-xj-Y2Q"/>
+                        <outlet property="foodBasicText" destination="dZa-jb-hAD" id="kIn-np-DOn"/>
+                        <outlet property="foodBestText" destination="0EL-2z-Ncg" id="stU-gL-5Ks"/>
+                        <outlet property="foodGoodText" destination="X9R-Us-pUX" id="Q8v-g6-hCf"/>
+                        <outlet property="nailBestText" destination="daM-IP-2RE" id="Ult-eH-9C2"/>
+                        <outlet property="nailGoodText" destination="904-Na-jpF" id="nn3-JD-Swq"/>
+                        <outlet property="shampooBasicText" destination="AER-Kt-cBH" id="0KM-g6-ala"/>
+                        <outlet property="shampooBestText" destination="74z-vc-y2g" id="7x7-30-8w3"/>
+                        <outlet property="shampooGoodText" destination="Gtj-Dg-PCO" id="nac-0g-y4F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -745,9 +762,8 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AeO-uo-Z7F"/>
         <segue reference="Nza-uV-bVT"/>
         <segue reference="I0h-MS-zPc"/>
-        <segue reference="8uo-PU-E0r"/>
+        <segue reference="YqZ-ox-SlI"/>
     </inferredMetricsTieBreakers>
 </document>
