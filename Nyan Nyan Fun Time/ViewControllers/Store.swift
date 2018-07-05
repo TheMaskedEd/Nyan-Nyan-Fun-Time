@@ -21,54 +21,28 @@ class Store: UIViewController {
     
     var itemIdentifiers:[Int] = [200,400,450,600,1000,150,250,350,200,400,140,250]
     
-    //to change price, itemIdentifier[itemName] = "bla"
-    
-    //food_basic:0
-    @IBOutlet weak var foodBasicText: UIButton!
-    //food_good:1
-    @IBOutlet weak var foodGoodText: UIButton!
-    //food_best:2
-    @IBOutlet weak var foodBestText: UIButton!
+    @IBOutlet var Items: [UIButton]!
     
     
-    //bed_good:3
-    @IBOutlet weak var bedGoodText: UIButton!
-    //bed_best:4
-    @IBOutlet weak var bedBestText: UIButton!
     
-    
-    //shampoo_Basic:5
-    @IBOutlet weak var shampooBasicText: UIButton!
-    
-    //Shampoo_Good:6
-    @IBOutlet weak var shampooGoodText: UIButton!
-    
-    //Shampoo_Best:7
-    @IBOutlet weak var shampooBestText: UIButton!
-    
-    
-    //brush_good:8
-    @IBOutlet weak var brushGoodText: UIButton!
-    
-    //brush_best:9
-    @IBOutlet weak var brushBestText: UIButton!
-    
-    
-    //nail_good:10
-    @IBOutlet weak var nailGoodText: UIButton!
-    
-    //nail_best:11
-    @IBOutlet weak var nailBestText: UIButton!
-    
-   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        foodBasicText.setTitle("Basic \(itemIdentifiers[0])", for: .normal)
-        foodGoodText.setTitle("Basic \(itemIdentifiers[1])", for: .normal)
-        foodBestText.setTitle("Basic \(itemIdentifiers[2])", for: .normal)
+        var specifyprice:Int? = 0
+        var specifyType:String? = ""
+        //Do any additional setup after loading the view.
+       
+        for Item in Items
+          {
+            Item.setTitle("Basic \(String(describing: specifyprice))", for: .normal)
+    
+            for priceItem in itemIdentifiers
+          {
+            specifyprice = priceItem
+            
+          }
+       
+      
+       
         //finish writing button labels
     }
 

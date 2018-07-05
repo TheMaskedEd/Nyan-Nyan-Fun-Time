@@ -198,28 +198,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNC-jA-QRv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNC-jA-QRv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-hm-IJE">
-                                <rect key="frame" x="0.0" y="44" width="191" height="79"/>
-                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
-                                <state key="normal" title="back" backgroundImage="ui_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-SZ-JnH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLZ-yg-hB1">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxS-mI-r45">
+                                                <rect key="frame" x="92" y="20" width="191" height="80"/>
+                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                                <state key="normal" title="Back" backgroundImage="ui_button">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="rhP-gK-JbA" kind="presentation" modalTransitionStyle="crossDissolve" id="I0h-MS-zPc"/>
+                                                </connections>
+                                            </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BQB-ud-7nX">
-                                                <rect key="frame" x="16" y="70" width="343" height="1430"/>
+                                                <rect key="frame" x="0.0" y="150" width="375" height="1350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnF-ij-EbJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="143"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -227,19 +231,19 @@
                                                         <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qym-8e-R6u">
-                                                        <rect key="frame" x="0.0" y="143" width="343" height="143"/>
+                                                        <rect key="frame" x="0.0" y="135" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8wA-2T-BBc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_basic" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-q6-b6T">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="100"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_good" translatesAutoresizingMaskIntoConstraints="NO" id="LXs-hv-oIz">
-                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="100"/>
+                                                                        <rect key="frame" x="125" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_best" translatesAutoresizingMaskIntoConstraints="NO" id="H8G-V6-Wyo">
-                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="100"/>
+                                                                        <rect key="frame" x="250" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -247,10 +251,10 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vC8-Nq-z9V">
-                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-jb-hAD">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Basic (200)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,7 +265,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
-                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <rect key="frame" x="125" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Good (400)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -269,7 +273,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-2z-Ncg">
-                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <rect key="frame" x="250" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Best(450)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,7 +285,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFj-NK-iGN">
-                                                        <rect key="frame" x="0.0" y="286" width="77" height="143"/>
+                                                        <rect key="frame" x="0.0" y="270" width="375" height="135"/>
                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -289,16 +293,16 @@
                                                         <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eaX-YA-sEk">
-                                                        <rect key="frame" x="0.0" y="429" width="343" height="143"/>
+                                                        <rect key="frame" x="0.0" y="405" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="a5z-Z3-MWk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed-good" translatesAutoresizingMaskIntoConstraints="NO" id="cME-M4-i1d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed_best" translatesAutoresizingMaskIntoConstraints="NO" id="ZYP-Ko-hM8">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -306,10 +310,10 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-7G-9vU">
-                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-z9-v3J">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Good(600)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -317,7 +321,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-dp-SrU">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Best(1000)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -329,7 +333,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shampoo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-ze-3Gl">
-                                                        <rect key="frame" x="0.0" y="572" width="178.33333333333334" height="143"/>
+                                                        <rect key="frame" x="0.0" y="540" width="375" height="135"/>
                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -337,19 +341,19 @@
                                                         <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fLf-VJ-O6S">
-                                                        <rect key="frame" x="0.0" y="715" width="343" height="143"/>
+                                                        <rect key="frame" x="0.0" y="675" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yaX-Fo-Dwo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_basic" translatesAutoresizingMaskIntoConstraints="NO" id="hSr-EE-wLg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="100"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_good" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-nw-Yeg">
-                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="100"/>
+                                                                        <rect key="frame" x="125" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shampoo_best" translatesAutoresizingMaskIntoConstraints="NO" id="jSq-w4-7Cb">
-                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="100"/>
+                                                                        <rect key="frame" x="250" y="0.0" width="125" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -357,10 +361,10 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-l3-0Gt">
-                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AER-Kt-cBH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Basic(150)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -368,7 +372,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-Dg-PCO">
-                                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <rect key="frame" x="125" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Good(250)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -376,7 +380,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74z-vc-y2g">
-                                                                        <rect key="frame" x="228.66666666666666" y="0.0" width="114.33333333333334" height="43"/>
+                                                                        <rect key="frame" x="250" y="0.0" width="125" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Best(350)" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -388,7 +392,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brush" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34n-wr-eG7">
-                                                        <rect key="frame" x="0.0" y="858" width="127.66666666666667" height="143"/>
+                                                        <rect key="frame" x="0.0" y="810" width="375" height="135"/>
                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -396,16 +400,16 @@
                                                         <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6ui-Og-U5b">
-                                                        <rect key="frame" x="0.0" y="1001" width="343" height="143"/>
+                                                        <rect key="frame" x="0.0" y="945" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-lm-ey0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16J-7I-C7D">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-4Q-rKD">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                                 <constraints>
@@ -413,10 +417,10 @@
                                                                 </constraints>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-m5-sG9">
-                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-3h-Vwv">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -424,7 +428,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-i2-qFz">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -436,7 +440,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nail Clippers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-vL-xT2">
-                                                        <rect key="frame" x="0.0" y="1144" width="310.66666666666669" height="143"/>
+                                                        <rect key="frame" x="0.0" y="1080" width="375" height="135"/>
                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="46"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -444,24 +448,24 @@
                                                         <size key="shadowOffset" width="1" height="2"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uZ7-33-X7i">
-                                                        <rect key="frame" x="0.0" y="1287" width="343" height="143"/>
+                                                        <rect key="frame" x="0.0" y="1215" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ell-y0-nXY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GBb-Z1-bFd">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="100"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="100"/>
                                                                     </imageView>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Kr-jrp">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="100"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BqP-TF-aUV">
-                                                                <rect key="frame" x="0.0" y="100" width="343" height="43"/>
+                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="904-Na-jpF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="43"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -469,7 +473,7 @@
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daM-IP-2RE">
-                                                                        <rect key="frame" x="171.66666666666663" y="0.0" width="171.33333333333337" height="43"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -481,73 +485,103 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="eaX-YA-sEk" firstAttribute="top" secondItem="xFj-NK-iGN" secondAttribute="bottom" id="1DG-4M-cJs"/>
+                                                    <constraint firstItem="6ui-Og-U5b" firstAttribute="top" secondItem="34n-wr-eG7" secondAttribute="bottom" id="1hd-Tf-wKT"/>
+                                                    <constraint firstItem="fLf-VJ-O6S" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="26h-Dd-nRP"/>
+                                                    <constraint firstItem="uZ7-33-X7i" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="B0u-8G-qHq"/>
+                                                    <constraint firstAttribute="height" constant="1350" id="B9i-Jk-fEY"/>
+                                                    <constraint firstItem="Kbl-ze-3Gl" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="F6Z-WQ-T0c"/>
+                                                    <constraint firstItem="GAp-vL-xT2" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="HaU-WK-vfI"/>
+                                                    <constraint firstItem="YnF-ij-EbJ" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="KcN-0U-Yb7"/>
+                                                    <constraint firstItem="YnF-ij-EbJ" firstAttribute="top" secondItem="BQB-ud-7nX" secondAttribute="top" id="MHf-it-5cE"/>
+                                                    <constraint firstItem="xFj-NK-iGN" firstAttribute="top" secondItem="qym-8e-R6u" secondAttribute="bottom" id="QUm-Jn-7Kx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uZ7-33-X7i" secondAttribute="bottom" id="Qrr-ob-gBH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6ui-Og-U5b" secondAttribute="trailing" id="S36-E9-q3W"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uZ7-33-X7i" secondAttribute="trailing" id="VH6-nG-YbJ"/>
+                                                    <constraint firstItem="eaX-YA-sEk" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="WLs-Ek-JmE"/>
+                                                    <constraint firstItem="qym-8e-R6u" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="WLw-94-pM8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fLf-VJ-O6S" secondAttribute="trailing" id="Y6U-ng-u6b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GAp-vL-xT2" secondAttribute="trailing" id="baU-BB-3p3"/>
+                                                    <constraint firstItem="6ui-Og-U5b" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="fcJ-lp-zKm"/>
+                                                    <constraint firstItem="34n-wr-eG7" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="hlN-YS-v4V"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eaX-YA-sEk" secondAttribute="trailing" id="hpK-ZV-gW8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xFj-NK-iGN" secondAttribute="trailing" id="j58-gx-VK1"/>
+                                                    <constraint firstItem="qym-8e-R6u" firstAttribute="top" secondItem="YnF-ij-EbJ" secondAttribute="bottom" id="mB7-vd-5fF"/>
+                                                    <constraint firstItem="xFj-NK-iGN" firstAttribute="leading" secondItem="BQB-ud-7nX" secondAttribute="leading" id="mze-e2-dM4"/>
+                                                    <constraint firstItem="fLf-VJ-O6S" firstAttribute="top" secondItem="Kbl-ze-3Gl" secondAttribute="bottom" id="p8e-kH-B6E"/>
+                                                    <constraint firstItem="Kbl-ze-3Gl" firstAttribute="top" secondItem="eaX-YA-sEk" secondAttribute="bottom" id="pfC-Jc-Vc0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kbl-ze-3Gl" secondAttribute="trailing" id="qpO-1q-nbk"/>
+                                                    <constraint firstItem="uZ7-33-X7i" firstAttribute="top" secondItem="GAp-vL-xT2" secondAttribute="bottom" id="s0z-Q4-bsT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YnF-ij-EbJ" secondAttribute="trailing" id="sKC-kD-BJZ"/>
+                                                    <constraint firstItem="34n-wr-eG7" firstAttribute="top" secondItem="fLf-VJ-O6S" secondAttribute="bottom" id="udI-Cm-xDS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qym-8e-R6u" secondAttribute="trailing" id="wmW-NY-gSk"/>
+                                                    <constraint firstItem="GAp-vL-xT2" firstAttribute="top" secondItem="6ui-Og-U5b" secondAttribute="bottom" id="wov-5M-1kx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="34n-wr-eG7" secondAttribute="trailing" id="xmk-mZ-vn5"/>
+                                                </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxS-mI-r45">
-                                                <rect key="frame" x="92" y="20" width="191" height="35"/>
-                                                <state key="normal" title="Back" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="rhP-gK-JbA" kind="presentation" modalTransitionStyle="crossDissolve" id="I0h-MS-zPc"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="top" secondItem="sxS-mI-r45" secondAttribute="bottom" constant="15" id="00y-zV-dbT"/>
-                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" constant="16" id="9p7-Zm-N6e"/>
-                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" constant="16" id="EZW-dT-7H0"/>
-                                            <constraint firstItem="sxS-mI-r45" firstAttribute="top" secondItem="PLZ-yg-hB1" secondAttribute="top" constant="20" id="Ibd-JV-w4t"/>
-                                            <constraint firstAttribute="height" constant="1500" id="PQ7-eT-kgC"/>
-                                            <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="Qk1-4n-odo"/>
-                                            <constraint firstItem="sxS-mI-r45" firstAttribute="centerX" secondItem="PLZ-yg-hB1" secondAttribute="centerX" id="WEJ-qm-W5S"/>
-                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="top" secondItem="PLZ-yg-hB1" secondAttribute="top" constant="70" id="hFE-O5-EhJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" id="7EZ-21-GUf"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" id="BqM-Ax-RIF"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" id="G9U-N4-8C0"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="top" secondItem="sxS-mI-r45" secondAttribute="bottom" constant="50" id="K8F-J7-xbA"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" id="L5i-kw-mIu"/>
+                                            <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="NJe-de-XOa"/>
+                                            <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="SWQ-it-0hq"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" id="U4L-Il-wgv"/>
+                                            <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="UjV-B9-w4c"/>
+                                            <constraint firstItem="sxS-mI-r45" firstAttribute="centerX" secondItem="BQB-ud-7nX" secondAttribute="centerX" id="ZRh-Pq-IZM"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" id="ZbC-fP-xfI"/>
+                                            <constraint firstAttribute="bottom" secondItem="BQB-ud-7nX" secondAttribute="bottom" id="aoS-Lu-wSr"/>
+                                            <constraint firstItem="sxS-mI-r45" firstAttribute="top" secondItem="PLZ-yg-hB1" secondAttribute="top" constant="20" id="bD8-Bc-VZ8"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="leading" secondItem="PLZ-yg-hB1" secondAttribute="leading" id="dRV-40-3aI"/>
+                                            <constraint firstAttribute="height" constant="1500" id="eqQ-61-2eq"/>
+                                            <constraint firstItem="BQB-ud-7nX" firstAttribute="top" secondItem="sxS-mI-r45" secondAttribute="bottom" constant="50" id="tyx-7I-m6A"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" id="ugC-8f-Qep"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQB-ud-7nX" secondAttribute="trailing" id="zul-04-aWU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="PLZ-yg-hB1" secondAttribute="trailing" id="0QU-ic-y2Z"/>
-                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="top" secondItem="F8S-SZ-JnH" secondAttribute="top" id="DRd-bf-TmT"/>
-                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="leading" secondItem="F8S-SZ-JnH" secondAttribute="leading" id="d1k-mr-9Fa"/>
-                                    <constraint firstAttribute="height" secondItem="PLZ-yg-hB1" secondAttribute="height" id="rJd-Qr-76G"/>
-                                    <constraint firstAttribute="bottom" secondItem="PLZ-yg-hB1" secondAttribute="bottom" id="wVc-Qk-ze1"/>
+                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="leading" secondItem="F8S-SZ-JnH" secondAttribute="leading" id="3MK-ke-oOY"/>
+                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="top" secondItem="F8S-SZ-JnH" secondAttribute="top" id="5Mf-21-TJK"/>
+                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="top" secondItem="F8S-SZ-JnH" secondAttribute="top" id="5sw-ml-hPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="PLZ-yg-hB1" secondAttribute="trailing" id="ASg-eG-CgS"/>
+                                    <constraint firstAttribute="trailing" secondItem="PLZ-yg-hB1" secondAttribute="trailing" id="Mki-xd-HEi"/>
+                                    <constraint firstAttribute="bottom" secondItem="PLZ-yg-hB1" secondAttribute="bottom" id="Nws-7W-E9b"/>
+                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="F8S-SZ-JnH" secondAttribute="width" id="VdV-nP-jS8"/>
+                                    <constraint firstAttribute="height" constant="1500" id="dhL-SV-9Cm"/>
+                                    <constraint firstAttribute="bottom" secondItem="PLZ-yg-hB1" secondAttribute="bottom" id="f7D-AK-udq"/>
+                                    <constraint firstItem="PLZ-yg-hB1" firstAttribute="leading" secondItem="F8S-SZ-JnH" secondAttribute="leading" id="jSO-fU-ejy"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LV4-hm-IJE" secondAttribute="trailing" constant="20" symbolic="YES" id="0kl-4d-931"/>
-                            <constraint firstItem="QNC-jA-QRv" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="4US-Wm-sBX"/>
-                            <constraint firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="BNi-mF-cSg"/>
-                            <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="i8Z-lE-mAa" secondAttribute="width" id="Kqp-ju-4Hk"/>
-                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="LsZ-8g-3Dg"/>
-                            <constraint firstAttribute="bottom" secondItem="QNC-jA-QRv" secondAttribute="bottom" id="UoZ-SL-Mm6"/>
-                            <constraint firstItem="ba4-Nu-Kfa" firstAttribute="trailing" secondItem="F8S-SZ-JnH" secondAttribute="trailing" id="Wsc-LA-UjT"/>
-                            <constraint firstItem="ba4-Nu-Kfa" firstAttribute="trailing" secondItem="F8S-SZ-JnH" secondAttribute="trailing" id="aAI-yA-5SZ"/>
-                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="bJA-HV-eWM"/>
-                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="d1X-rS-28r"/>
-                            <constraint firstItem="LV4-hm-IJE" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="gkw-HW-Huc"/>
-                            <constraint firstItem="LV4-hm-IJE" firstAttribute="top" secondItem="ba4-Nu-Kfa" secondAttribute="top" id="iMK-rg-32k"/>
-                            <constraint firstItem="QNC-jA-QRv" firstAttribute="leading" secondItem="i8Z-lE-mAa" secondAttribute="leading" id="k3r-HI-Fuj"/>
-                            <constraint firstAttribute="trailing" secondItem="QNC-jA-QRv" secondAttribute="trailing" id="qx1-R9-L3F"/>
+                            <constraint firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="6CU-Vo-ffz"/>
+                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="trailing" secondItem="ba4-Nu-Kfa" secondAttribute="trailing" id="9Pp-YS-8Zv"/>
+                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="Arl-ky-Y3x"/>
+                            <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="QAW-EJ-7HS"/>
+                            <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="i8Z-lE-mAa" secondAttribute="width" id="VSV-6C-M3m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ba4-Nu-Kfa"/>
                     </view>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
-                        <outlet property="bedBestText" destination="ksV-dp-SrU" id="uVk-sH-7oc"/>
-                        <outlet property="bedGoodText" destination="KbV-z9-v3J" id="oqC-6y-X1s"/>
-                        <outlet property="brushBestText" destination="awF-i2-qFz" id="Phq-U1-VW5"/>
-                        <outlet property="brushGoodText" destination="YOb-3h-Vwv" id="BsI-xj-Y2Q"/>
-                        <outlet property="foodBasicText" destination="dZa-jb-hAD" id="kIn-np-DOn"/>
-                        <outlet property="foodBestText" destination="0EL-2z-Ncg" id="stU-gL-5Ks"/>
-                        <outlet property="foodGoodText" destination="X9R-Us-pUX" id="Q8v-g6-hCf"/>
-                        <outlet property="nailBestText" destination="daM-IP-2RE" id="Ult-eH-9C2"/>
-                        <outlet property="nailGoodText" destination="904-Na-jpF" id="nn3-JD-Swq"/>
-                        <outlet property="shampooBasicText" destination="AER-Kt-cBH" id="0KM-g6-ala"/>
-                        <outlet property="shampooBestText" destination="74z-vc-y2g" id="7x7-30-8w3"/>
-                        <outlet property="shampooGoodText" destination="Gtj-Dg-PCO" id="nac-0g-y4F"/>
+                        <outletCollection property="Items" destination="dZa-jb-hAD" collectionClass="NSMutableArray" id="Mp1-ri-wRX"/>
+                        <outletCollection property="Items" destination="X9R-Us-pUX" collectionClass="NSMutableArray" id="vTL-zn-zgv"/>
+                        <outletCollection property="Items" destination="0EL-2z-Ncg" collectionClass="NSMutableArray" id="fnq-IL-eK4"/>
+                        <outletCollection property="Items" destination="KbV-z9-v3J" collectionClass="NSMutableArray" id="GKV-gq-6Xp"/>
+                        <outletCollection property="Items" destination="ksV-dp-SrU" collectionClass="NSMutableArray" id="rCV-2W-qg7"/>
+                        <outletCollection property="Items" destination="AER-Kt-cBH" collectionClass="NSMutableArray" id="Q09-4l-NRH"/>
+                        <outletCollection property="Items" destination="Gtj-Dg-PCO" collectionClass="NSMutableArray" id="Lmi-vv-VF9"/>
+                        <outletCollection property="Items" destination="74z-vc-y2g" collectionClass="NSMutableArray" id="EyQ-io-tf6"/>
+                        <outletCollection property="Items" destination="YOb-3h-Vwv" collectionClass="NSMutableArray" id="POj-ar-6nf"/>
+                        <outletCollection property="Items" destination="awF-i2-qFz" collectionClass="NSMutableArray" id="ucm-pB-U5D"/>
+                        <outletCollection property="Items" destination="904-Na-jpF" collectionClass="NSMutableArray" id="CUx-s7-RRr"/>
+                        <outletCollection property="Items" destination="daM-IP-2RE" collectionClass="NSMutableArray" id="hxq-E7-gPp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -963,7 +997,7 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nza-uV-bVT"/>
+        <segue reference="SMI-8x-dPU"/>
         <segue reference="I0h-MS-zPc"/>
         <segue reference="Sg1-Ws-gmQ"/>
     </inferredMetricsTieBreakers>
