@@ -9,10 +9,28 @@
 import UIKit
 
 class Status: UIViewController {
-
+    @IBOutlet weak var Health: UIProgressView!
+  
+    @IBOutlet weak var Happiness: UIProgressView!
+    
+    @IBOutlet weak var Energy: UIProgressView!
+    
+    @IBOutlet weak var Hygiene: UIProgressView!
+   
+    @IBOutlet weak var Pain: UIProgressView!
+    
+    @IBOutlet weak var Hunger: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let Progressbars = [Health,Happiness,Energy,Hygiene,Pain,Hunger]
+        for Bars in Progressbars {
+            Bars?.setProgress(100, animated:true)
+        }
+        
+    
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

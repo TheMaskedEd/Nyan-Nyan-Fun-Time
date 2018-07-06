@@ -779,7 +779,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Van-0n-l1x">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Van-0n-l1x">
                                                                 <rect key="frame" x="0.0" y="46.333333333333258" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
@@ -850,6 +850,14 @@
                         <viewLayoutGuide key="safeArea" id="XNm-0K-zNj"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="Energy" destination="yon-hZ-jlU" id="Aon-xG-ag4"/>
+                        <outlet property="Happiness" destination="G6h-fh-w5S" id="mtN-AD-PHu"/>
+                        <outlet property="Health" destination="gqU-L3-sHs" id="WDJ-Hx-Wq1"/>
+                        <outlet property="Hunger" destination="FFT-tS-Ac0" id="9Bn-0W-oSc"/>
+                        <outlet property="Hygiene" destination="tjv-eC-FNG" id="SdJ-PQ-ZxV"/>
+                        <outlet property="Pain" destination="Van-0n-l1x" id="gou-YC-qXI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SH3-Kh-1b0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -998,7 +1006,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SMI-8x-dPU"/>
-        <segue reference="I0h-MS-zPc"/>
+        <segue reference="4lv-Un-VNE"/>
         <segue reference="Sg1-Ws-gmQ"/>
     </inferredMetricsTieBreakers>
 </document>

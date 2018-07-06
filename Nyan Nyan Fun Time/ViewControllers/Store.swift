@@ -34,22 +34,17 @@ class Store: UIViewController {
         for Item in Items
           {
             Item.setTitle("Basic \(String(describing: specifyprice))", for: .normal)
-    
-            for priceItem in itemIdentifiers
-          {
+          }
+        for priceItem in itemIdentifiers
+        {
             specifyprice = priceItem
             
-          }
-       
-      
-       
-        //finish writing button labels
-    }
+        }
 
     
     //buttons with their actions using buy()
     
-    @IBAction func foodBasic(_ sender: Any) {
+        func foodBasic(_ sender: Any) {
         buy(productName: "Basic Food", priceOfItem: 200)
     }
     
@@ -72,21 +67,10 @@ class Store: UIViewController {
     
     
     
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
