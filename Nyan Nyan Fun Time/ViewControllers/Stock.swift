@@ -36,6 +36,7 @@ class Stock: UIViewController {
             button.backgroundColor = .green
             button.setTitle("Test Button", for: .normal)
             
+            //insert switch statement here
             
 
             button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
