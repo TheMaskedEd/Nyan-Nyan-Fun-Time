@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Status: UIViewController {
     @IBOutlet weak var Health: UIProgressView!
   
@@ -23,17 +24,13 @@ class Status: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let Progressbars = [Health,Happiness,Energy,Hygiene,Pain,Hunger]
         for Bars in Progressbars {
-            Bars?.setProgress(100, animated:true)
-        }
+            Bars?.setProgress(1, animated: true)
         
-    
-        
-        
-    }
-
-    override func didReceiveMemoryWarning() {
+            
+    func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -49,4 +46,6 @@ class Status: UIViewController {
     }
     */
 
+ }
+}
 }

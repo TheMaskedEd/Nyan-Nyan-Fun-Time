@@ -36,10 +36,8 @@ class Stock: UIViewController {
             button.backgroundColor = .green
             button.setTitle("Test Button", for: .normal)
             
-            //switch case with items here; do after item images and
             
-            
-            
+
             button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             
             self.view.addSubview(currentStackView!)

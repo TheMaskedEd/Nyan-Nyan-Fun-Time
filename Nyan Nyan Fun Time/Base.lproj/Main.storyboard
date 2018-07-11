@@ -260,9 +260,6 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
-                                                                        <connections>
-                                                                            <action selector="foodBasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="90R-Mh-zwo"/>
-                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
                                                                         <rect key="frame" x="125" y="0.0" width="125" height="35"/>
@@ -570,18 +567,18 @@
                     </view>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
-                        <outletCollection property="Items" destination="dZa-jb-hAD" collectionClass="NSMutableArray" id="Mp1-ri-wRX"/>
-                        <outletCollection property="Items" destination="X9R-Us-pUX" collectionClass="NSMutableArray" id="vTL-zn-zgv"/>
-                        <outletCollection property="Items" destination="0EL-2z-Ncg" collectionClass="NSMutableArray" id="fnq-IL-eK4"/>
-                        <outletCollection property="Items" destination="KbV-z9-v3J" collectionClass="NSMutableArray" id="GKV-gq-6Xp"/>
-                        <outletCollection property="Items" destination="ksV-dp-SrU" collectionClass="NSMutableArray" id="rCV-2W-qg7"/>
-                        <outletCollection property="Items" destination="AER-Kt-cBH" collectionClass="NSMutableArray" id="Q09-4l-NRH"/>
-                        <outletCollection property="Items" destination="Gtj-Dg-PCO" collectionClass="NSMutableArray" id="Lmi-vv-VF9"/>
-                        <outletCollection property="Items" destination="74z-vc-y2g" collectionClass="NSMutableArray" id="EyQ-io-tf6"/>
-                        <outletCollection property="Items" destination="YOb-3h-Vwv" collectionClass="NSMutableArray" id="POj-ar-6nf"/>
-                        <outletCollection property="Items" destination="awF-i2-qFz" collectionClass="NSMutableArray" id="ucm-pB-U5D"/>
-                        <outletCollection property="Items" destination="904-Na-jpF" collectionClass="NSMutableArray" id="CUx-s7-RRr"/>
-                        <outletCollection property="Items" destination="daM-IP-2RE" collectionClass="NSMutableArray" id="hxq-E7-gPp"/>
+                        <outlet property="BedBest" destination="ksV-dp-SrU" id="hhL-bo-iMP"/>
+                        <outlet property="BedGood" destination="KbV-z9-v3J" id="P1A-aF-BGH"/>
+                        <outlet property="BrushBasic" destination="YOb-3h-Vwv" id="Jut-r0-q7a"/>
+                        <outlet property="BrushBest" destination="awF-i2-qFz" id="UaV-z7-8at"/>
+                        <outlet property="FoodBasic" destination="dZa-jb-hAD" id="ZHv-Co-cgh"/>
+                        <outlet property="FoodBest" destination="0EL-2z-Ncg" id="RGz-E0-QaI"/>
+                        <outlet property="FoodGood" destination="X9R-Us-pUX" id="ro5-2w-GsO"/>
+                        <outlet property="NailBest" destination="daM-IP-2RE" id="0nd-EI-G9B"/>
+                        <outlet property="NailGood" destination="904-Na-jpF" id="yrB-fq-aPA"/>
+                        <outlet property="ShampooBasic" destination="AER-Kt-cBH" id="Bfq-Ny-rPw"/>
+                        <outlet property="ShampooBest" destination="74z-vc-y2g" id="SUv-rS-Zd0"/>
+                        <outlet property="ShampooGood" destination="Gtj-Dg-PCO" id="Oig-th-8zk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -711,7 +708,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-L3-sHs">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-L3-sHs">
                                                                 <rect key="frame" x="0.0" y="46.333333333333329" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
@@ -728,7 +725,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-fh-w5S">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="G6h-fh-w5S">
                                                                 <rect key="frame" x="0.0" y="46.333333333333343" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980392156865" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
@@ -745,7 +742,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yon-hZ-jlU">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="yon-hZ-jlU">
                                                                 <rect key="frame" x="0.0" y="46.333333333333314" width="343" height="36"/>
                                                             </progressView>
                                                         </subviews>
@@ -762,7 +759,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-eC-FNG">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="tjv-eC-FNG">
                                                                 <rect key="frame" x="0.0" y="46.333333333333371" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
@@ -796,7 +793,7 @@
                                                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <size key="shadowOffset" width="1" height="2"/>
                                                             </label>
-                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-tS-Ac0">
+                                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="FFT-tS-Ac0">
                                                                 <rect key="frame" x="0.0" y="46.333333333333371" width="343" height="36"/>
                                                                 <color key="tintColor" red="1" green="0.27450980390000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </progressView>
@@ -1006,7 +1003,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SMI-8x-dPU"/>
-        <segue reference="4lv-Un-VNE"/>
-        <segue reference="Sg1-Ws-gmQ"/>
+        <segue reference="I0h-MS-zPc"/>
+        <segue reference="YqZ-ox-SlI"/>
     </inferredMetricsTieBreakers>
 </document>
