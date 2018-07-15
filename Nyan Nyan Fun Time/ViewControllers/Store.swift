@@ -7,9 +7,9 @@
 //
 
 import UIKit
-var inventory:[String] = ["foodBasic"]
-var money = 1000
-
+var inventory:[String] = []
+var money = 200
+var status = ""
 class Store: UIViewController {
 
     var price = 0
@@ -43,12 +43,51 @@ class Store: UIViewController {
     @IBOutlet weak var NailGood: UIButton!
     
     @IBOutlet weak var NailBest: UIButton!
+  
+    @IBAction func foodbasic(_ sender: UIButton) {
+        buy(productName: "Basic Food", priceOfItem: itemIdentifiers[0])
+    }
+    @IBAction func foodgood(_ sender: UIButton) {
+     buy(productName: "Good Food", priceOfItem: itemIdentifiers[1])
+    }
+    @IBAction func foodbest(_ sender: UIButton) {
+     buy(productName: "Best Food", priceOfItem: itemIdentifiers[2])
+    }
+    @IBAction func bedGood(_ sender: UIButton) {
+     buy(productName: "Good Bed", priceOfItem: itemIdentifiers[3])
+    }
+    @IBAction func bedBest(_ sender: UIButton) {
+     buy(productName: "Best Bed", priceOfItem: itemIdentifiers[4])
+    }
+    @IBAction func bedBasic(_ sender: UIButton) {
+     buy(productName: "Basic shampoo", priceOfItem: itemIdentifiers[4])
+    }
+    @IBAction func shampooGood(_ sender: UIButton) {
+     buy(productName: "Good shampoo", priceOfItem: itemIdentifiers[5])
+    }
+    @IBAction func shampooBest(_ sender: UIButton) {
+     buy(productName: "shampoo Food", priceOfItem: itemIdentifiers[6])
+    }
+    
+    
+    
+    func buy(productName: String, priceOfItem: Int){
+        if money == priceOfItem{
+            inventory.append(productName)
+            print ("done")
+            let pass = status
+        }
+        else{
+            //figure out how to make a "not enough money" type thing
+        }
+        
+    }
     
     
   
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+    // setting 
         FoodBasic.setTitle("Basic \(String(itemIdentifiers[0]))", for: .normal)
         FoodGood.setTitle("Good \(String(itemIdentifiers[1]))", for: .normal)
         FoodBest.setTitle("Best \(String(itemIdentifiers[2]))", for: .normal)
@@ -61,20 +100,7 @@ class Store: UIViewController {
         BrushBest.setTitle("Best \(String(itemIdentifiers[9]))", for: .normal)
         NailGood.setTitle("Good \(String(itemIdentifiers[10]))", for: .normal)
         NailBest.setTitle("Best \(String(itemIdentifiers[11]))", for: .normal)
-        
     
-
-    
-    func buy(productName: String, priceOfItem: Int){
-        if money >= priceOfItem{
-            inventory.append(productName)
-            print ("done")
-        }
-        else{
-            //figure out how to make a "not enough money" type thing
-        }
-        
-    }
     
 
         func didReceiveMemoryWarning() {
@@ -82,12 +108,11 @@ class Store: UIViewController {
         // Dispose of any resources that can be recreated.
     }
             
-            func foodBasic(_ sender: Any) {
-                buy(productName: "Basic Food", priceOfItem: 200)
+
             
 
 }
 }
-}
+
 
 

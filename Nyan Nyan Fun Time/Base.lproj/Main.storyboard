@@ -260,6 +260,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="foodbasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="NwQ-1P-O46"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-Us-pUX">
                                                                         <rect key="frame" x="125" y="0.0" width="125" height="35"/>
@@ -268,6 +271,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="foodgood:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="5c8-EP-lh8"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EL-2z-Ncg">
                                                                         <rect key="frame" x="250" y="0.0" width="125" height="35"/>
@@ -276,6 +282,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="foodbest:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="zei-os-7vT"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -316,6 +325,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="bedGood:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="S9V-lP-Kaj"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-dp-SrU">
                                                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
@@ -324,6 +336,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="bedBest:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="1bs-uH-alY"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -367,6 +382,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="bedBasic:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="Oen-g4-Beb"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtj-Dg-PCO">
                                                                         <rect key="frame" x="125" y="0.0" width="125" height="35"/>
@@ -375,6 +393,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="shampooGood:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="FY8-HD-LGW"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74z-vc-y2g">
                                                                         <rect key="frame" x="250" y="0.0" width="125" height="35"/>
@@ -383,6 +404,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="shampooBest:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="BGi-G0-gng"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -579,6 +603,8 @@
                         <outlet property="ShampooBasic" destination="AER-Kt-cBH" id="Bfq-Ny-rPw"/>
                         <outlet property="ShampooBest" destination="74z-vc-y2g" id="SUv-rS-Zd0"/>
                         <outlet property="ShampooGood" destination="Gtj-Dg-PCO" id="Oig-th-8zk"/>
+                        <outlet property="foodgood" destination="X9R-Us-pUX" id="2Wa-Rf-y05"/>
+                        <outlet property="shampooGood" destination="Gtj-Dg-PCO" id="AQz-ht-K7Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -887,25 +913,8 @@
                                 <rect key="frame" x="87" y="304" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvC-bA-2s5">
-                                <rect key="frame" x="0.0" y="94" width="375" height="684"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dmm-W6-965">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xf5-hv-Uxs">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="156"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-Gd-pOr">
-                                        <rect key="frame" x="0.0" y="352" width="375" height="156"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-3V-3k5">
-                                        <rect key="frame" x="0.0" y="528" width="375" height="156"/>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3V-E1-oEF">
-                                <rect key="frame" x="30" y="44" width="315" height="35"/>
+                                <rect key="frame" x="30" y="44" width="315" height="79"/>
                                 <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                 <state key="normal" title="back" backgroundImage="ui_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -918,24 +927,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tvC-bA-2s5" firstAttribute="leading" secondItem="pal-dw-M4p" secondAttribute="leading" id="0J1-kf-MY0"/>
                             <constraint firstItem="pal-dw-M4p" firstAttribute="trailing" secondItem="j3V-E1-oEF" secondAttribute="trailing" constant="30" id="864-oQ-Pzw"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="centerX" secondItem="Qbi-Zd-PiH" secondAttribute="centerX" id="cnd-a0-b0b"/>
-                            <constraint firstItem="pal-dw-M4p" firstAttribute="bottom" secondItem="tvC-bA-2s5" secondAttribute="bottom" id="d4R-4t-J8T"/>
-                            <constraint firstItem="pal-dw-M4p" firstAttribute="trailing" secondItem="tvC-bA-2s5" secondAttribute="trailing" id="dnd-lI-Lwh"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="top" secondItem="pal-dw-M4p" secondAttribute="top" id="gm3-ZY-YU1"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="leading" secondItem="pal-dw-M4p" secondAttribute="leading" constant="30" id="mft-Ef-iIL"/>
-                            <constraint firstItem="tvC-bA-2s5" firstAttribute="top" secondItem="j3V-E1-oEF" secondAttribute="bottom" constant="15" id="rmh-ff-d2U"/>
-                            <constraint firstItem="tvC-bA-2s5" firstAttribute="top" secondItem="pal-dw-M4p" secondAttribute="top" constant="50" id="uIz-RH-WmV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pal-dw-M4p"/>
                     </view>
-                    <connections>
-                        <outlet property="stackView1" destination="Dmm-W6-965" id="Xf8-Ps-0a1"/>
-                        <outlet property="stackView2" destination="Xf5-hv-Uxs" id="R2X-LL-c5g"/>
-                        <outlet property="stackView3" destination="mPP-Gd-pOr" id="acG-KM-S5F"/>
-                        <outlet property="stackView4" destination="jA5-3V-3k5" id="aWC-cT-H8g"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DF5-VC-jua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
