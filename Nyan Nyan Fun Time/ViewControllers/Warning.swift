@@ -1,16 +1,24 @@
-
 //
-//  work.swift
+//  Warning.swift
 //  Nyan Nyan Fun Time
 //
-//  Created by Edward Goodall on 6/20/18.
+//  Created by Edward Goodall on 7/22/18.
 //  Copyright © 2018 Kofu Interactive. All rights reserved.
 //
 
 import UIKit
-// click a button to earn money pretty simple
-class work: UIViewController {
 
+class Warning: UIViewController {
+ 
+    @IBAction func popUpClose(_ sender: Any) {
+    let viewwithtag = self.view.viewWithTag(1)
+        viewwithtag?.removeFromSuperview()
+    }
+    
+    
+    
+ 
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 

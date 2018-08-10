@@ -7,29 +7,31 @@
 //
 
 import UIKit
+// use a random to land on a chore
+// make a function that uses the items selected in stock
+//add their vaules onto status
 
 class Chore: UIViewController {
-
+    @IBOutlet weak var imageChore: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
+        
+        func image(image1:UIImage,image2:UIImage,image3:UIImage,image4:UIImage){
+            let imageNames = [image1,image2,image3,image4]
+        
+            imageChore.animationImages = imageNames
+            imageChore.animationDuration = 2.0
+            imageChore.startAnimating()
+ }
+}
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+ }
+            // Dispose of any resources that can be recreated.
+     
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

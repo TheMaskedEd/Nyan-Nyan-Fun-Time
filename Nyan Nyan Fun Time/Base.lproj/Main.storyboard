@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,72 +27,67 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_background.1" translatesAutoresizingMaskIntoConstraints="NO" id="Zq4-mX-xjU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZCX-Z6-FCs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_cat.1" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Aq-pZD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-Kj-kGo">
+                                <rect key="frame" x="0.0" y="699" width="375" height="79"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_cat.1" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Aq-pZD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="761"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uyC-Kj-kGo">
-                                        <rect key="frame" x="0.0" y="748.66666666666663" width="375" height="63.333333333333371"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0M-dF-Se6">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="63.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
-                                                <state key="normal" title="Stock" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="0un-Rj-HKZ" kind="presentation" id="SMI-8x-dPU"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfW-zQ-8dp">
-                                                <rect key="frame" x="75.333333333333343" y="0.0" width="73.333333333333343" height="63.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
-                                                <state key="normal" title="Activity" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="vWC-Xb-igb" kind="presentation" id="4Zd-p4-eza"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb8-xR-lFK">
-                                                <rect key="frame" x="150.66666666666666" y="0.0" width="73.666666666666657" height="63.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
-                                                <state key="normal" title="Status" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="qGH-fq-XTY" kind="presentation" id="wi2-Hi-JCB"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D7-2v-evy">
-                                                <rect key="frame" x="226.33333333333334" y="0.0" width="73.333333333333343" height="63.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
-                                                <state key="normal" title="Store" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="rhP-gK-JbA" kind="presentation" id="4lv-Un-VNE"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1s-dD-CQK">
-                                                <rect key="frame" x="301.66666666666669" y="0.0" width="73.333333333333314" height="63.333333333333336"/>
-                                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
-                                                <state key="normal" title="Job" backgroundImage="ui_button">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Pw6-xn-Teu" kind="presentation" id="k6K-KI-Jt2"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0M-dF-Se6">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="79"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                        <state key="normal" title="Stock" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0un-Rj-HKZ" kind="presentation" id="SMI-8x-dPU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfW-zQ-8dp">
+                                        <rect key="frame" x="75.333333333333343" y="0.0" width="73.333333333333343" height="79"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                        <state key="normal" title="Activity" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vWC-Xb-igb" kind="presentation" id="4Zd-p4-eza"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb8-xR-lFK">
+                                        <rect key="frame" x="150.66666666666666" y="0.0" width="73.666666666666657" height="79"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                        <state key="normal" title="Status" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="qGH-fq-XTY" kind="presentation" id="wi2-Hi-JCB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D7-2v-evy">
+                                        <rect key="frame" x="226.33333333333334" y="0.0" width="73.333333333333343" height="79"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                        <state key="normal" title="Store" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="rhP-gK-JbA" kind="presentation" id="4lv-Un-VNE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1s-dD-CQK">
+                                        <rect key="frame" x="301.66666666666669" y="0.0" width="73.333333333333314" height="79"/>
+                                        <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="15"/>
+                                        <state key="normal" title="Job" backgroundImage="ui_button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Pw6-xn-Teu" kind="presentation" id="k6K-KI-Jt2"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -100,12 +95,18 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Zq4-mX-xjU" secondAttribute="bottom" id="5Zo-yw-Spl"/>
                             <constraint firstItem="Zq4-mX-xjU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A3r-gC-AyA"/>
+                            <constraint firstItem="POs-Aq-pZD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ARz-2s-TJP"/>
+                            <constraint firstItem="POs-Aq-pZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DgF-Zh-LEt"/>
                             <constraint firstItem="Zq4-mX-xjU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EYb-0U-Xl1"/>
                             <constraint firstItem="Zq4-mX-xjU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mq0-6h-D7h"/>
-                            <constraint firstItem="ZCX-Z6-FCs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Um1-VK-owj"/>
-                            <constraint firstAttribute="trailing" secondItem="ZCX-Z6-FCs" secondAttribute="trailing" id="d1J-cK-fyN"/>
-                            <constraint firstAttribute="bottom" secondItem="ZCX-Z6-FCs" secondAttribute="bottom" id="ukl-nN-Pak"/>
-                            <constraint firstItem="ZCX-Z6-FCs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w7U-R0-btP"/>
+                            <constraint firstAttribute="trailing" secondItem="uyC-Kj-kGo" secondAttribute="trailing" id="TCH-VW-4ON"/>
+                            <constraint firstAttribute="bottom" secondItem="POs-Aq-pZD" secondAttribute="bottom" id="WdS-Fi-5am"/>
+                            <constraint firstItem="POs-Aq-pZD" firstAttribute="leading" secondItem="uyC-Kj-kGo" secondAttribute="leading" id="dHb-O5-Sgz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uyC-Kj-kGo" secondAttribute="bottom" id="ew4-vc-xAg"/>
+                            <constraint firstItem="POs-Aq-pZD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jll-7z-jJ9"/>
+                            <constraint firstAttribute="bottom" secondItem="POs-Aq-pZD" secondAttribute="bottom" id="jqb-6J-NT6"/>
+                            <constraint firstItem="POs-Aq-pZD" firstAttribute="trailing" secondItem="Zq4-mX-xjU" secondAttribute="trailing" id="wUr-iI-NRf"/>
+                            <constraint firstItem="uyC-Kj-kGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yDi-bT-Thw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -198,9 +199,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNC-jA-QRv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNC-jA-QRv">
+                                <rect key="frame" x="1" y="0.0" width="375" height="1500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Oah-O6-wjI"/>
+                                </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-SZ-JnH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
@@ -426,10 +429,10 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-lm-ey0">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="16J-7I-C7D">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comb_good" translatesAutoresizingMaskIntoConstraints="NO" id="16J-7I-C7D">
                                                                         <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="100"/>
                                                                     </imageView>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-4Q-rKD">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Comb_best" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-4Q-rKD">
                                                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="100"/>
                                                                     </imageView>
                                                                 </subviews>
@@ -440,13 +443,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-m5-sG9">
                                                                 <rect key="frame" x="0.0" y="100" width="375" height="35"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-3h-Vwv">
+                                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-3h-Vwv" userLabel="Brush good">
                                                                         <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="35"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="brushGood:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="Uat-fa-5sS"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awF-i2-qFz">
                                                                         <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
@@ -455,6 +461,9 @@
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="brushBest:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="p3p-4k-Ll4"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -472,38 +481,47 @@
                                                         <rect key="frame" x="0.0" y="1215" width="375" height="135"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ell-y0-nXY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GBb-Z1-bFd">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="100"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nail_good" translatesAutoresizingMaskIntoConstraints="NO" id="GBb-Z1-bFd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="56"/>
                                                                     </imageView>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Kr-jrp">
-                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="100"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nail_best" translatesAutoresizingMaskIntoConstraints="NO" id="r07-Kr-jrp">
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="56"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BqP-TF-aUV">
-                                                                <rect key="frame" x="0.0" y="100" width="375" height="35"/>
+                                                                <rect key="frame" x="0.0" y="56" width="375" height="79"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="904-Na-jpF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="79"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="NailGood:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="JSo-tU-rWo"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daM-IP-2RE">
-                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="35"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="79"/>
                                                                         <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                                                         <state key="normal" title="Button" backgroundImage="ui_button">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="NailBest:" destination="iLV-hv-Yhm" eventType="touchUpInside" id="Rtl-cF-bk0"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="BqP-TF-aUV" firstAttribute="top" secondItem="uZ7-33-X7i" secondAttribute="top" constant="56" id="aBR-oj-Edz"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
@@ -584,8 +602,11 @@
                             <constraint firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="6CU-Vo-ffz"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="trailing" secondItem="ba4-Nu-Kfa" secondAttribute="trailing" id="9Pp-YS-8Zv"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="top" secondItem="i8Z-lE-mAa" secondAttribute="top" id="Arl-ky-Y3x"/>
+                            <constraint firstItem="QNC-jA-QRv" firstAttribute="top" secondItem="F8S-SZ-JnH" secondAttribute="top" id="DIC-yI-PkT"/>
+                            <constraint firstItem="QNC-jA-QRv" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" constant="1" id="Ixj-eN-32m"/>
                             <constraint firstItem="F8S-SZ-JnH" firstAttribute="leading" secondItem="ba4-Nu-Kfa" secondAttribute="leading" id="QAW-EJ-7HS"/>
                             <constraint firstItem="PLZ-yg-hB1" firstAttribute="width" secondItem="i8Z-lE-mAa" secondAttribute="width" id="VSV-6C-M3m"/>
+                            <constraint firstItem="QNC-jA-QRv" firstAttribute="bottom" secondItem="F8S-SZ-JnH" secondAttribute="bottom" id="k9w-5G-1O1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ba4-Nu-Kfa"/>
                     </view>
@@ -599,12 +620,10 @@
                         <outlet property="FoodBest" destination="0EL-2z-Ncg" id="RGz-E0-QaI"/>
                         <outlet property="FoodGood" destination="X9R-Us-pUX" id="ro5-2w-GsO"/>
                         <outlet property="NailBest" destination="daM-IP-2RE" id="0nd-EI-G9B"/>
-                        <outlet property="NailGood" destination="904-Na-jpF" id="yrB-fq-aPA"/>
+                        <outlet property="NailGood" destination="904-Na-jpF" id="V0A-JC-0xg"/>
                         <outlet property="ShampooBasic" destination="AER-Kt-cBH" id="Bfq-Ny-rPw"/>
                         <outlet property="ShampooBest" destination="74z-vc-y2g" id="SUv-rS-Zd0"/>
                         <outlet property="ShampooGood" destination="Gtj-Dg-PCO" id="Oig-th-8zk"/>
-                        <outlet property="foodgood" destination="X9R-Us-pUX" id="2Wa-Rf-y05"/>
-                        <outlet property="shampooGood" destination="Gtj-Dg-PCO" id="AQz-ht-K7Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQZ-vl-Qaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -657,7 +676,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL4-OE-Qnp">
-                                <rect key="frame" x="30" y="44" width="315" height="35"/>
+                                <rect key="frame" x="92" y="44" width="191" height="35"/>
                                 <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
                                 <state key="normal" title="back" backgroundImage="ui_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -672,12 +691,12 @@
                         <constraints>
                             <constraint firstItem="RL4-OE-Qnp" firstAttribute="centerX" secondItem="aeZ-sQ-VWJ" secondAttribute="centerX" id="5B9-Dk-bAw"/>
                             <constraint firstItem="0qN-0B-t52" firstAttribute="top" secondItem="022-pM-6Ye" secondAttribute="top" constant="50" id="6Py-uA-bwu"/>
-                            <constraint firstItem="RL4-OE-Qnp" firstAttribute="leading" secondItem="aeZ-sQ-VWJ" secondAttribute="leading" constant="30" id="6qu-w0-5Ik"/>
+                            <constraint firstItem="RL4-OE-Qnp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aeZ-sQ-VWJ" secondAttribute="leading" id="6qu-w0-5Ik"/>
                             <constraint firstItem="022-pM-6Ye" firstAttribute="bottom" secondItem="0qN-0B-t52" secondAttribute="bottom" id="EU6-kw-cvl"/>
                             <constraint firstAttribute="trailing" secondItem="0qN-0B-t52" secondAttribute="trailing" constant="16" id="H1m-If-90T"/>
                             <constraint firstItem="0qN-0B-t52" firstAttribute="leading" secondItem="022-pM-6Ye" secondAttribute="leading" constant="16" id="JsX-2T-N53"/>
                             <constraint firstItem="0qN-0B-t52" firstAttribute="top" secondItem="RL4-OE-Qnp" secondAttribute="bottom" constant="15" id="qIk-RF-8vx"/>
-                            <constraint firstAttribute="trailing" secondItem="RL4-OE-Qnp" secondAttribute="trailing" constant="30" id="v6l-Tl-YtP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RL4-OE-Qnp" secondAttribute="trailing" id="v6l-Tl-YtP"/>
                             <constraint firstItem="RL4-OE-Qnp" firstAttribute="top" secondItem="022-pM-6Ye" secondAttribute="top" id="vDp-ef-RmD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="022-pM-6Ye"/>
@@ -694,13 +713,45 @@
                     <view key="view" contentMode="scaleToFill" id="BPg-gG-vhX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-FK-6ip">
+                                <rect key="frame" x="130" y="639" width="115" height="79"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                <state key="normal" title="Button" backgroundImage="ui_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-HF-owo">
+                                <rect key="frame" x="53" y="76" width="269" height="532"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-9l-n1Y">
+                                <rect key="frame" x="130" y="639" width="115" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
+                                <state key="normal" title="Button" backgroundImage="ui_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JMw-FK-6ip" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="130" id="GRm-5k-7h4"/>
+                            <constraint firstItem="JMw-FK-6ip" firstAttribute="top" secondItem="4ay-HF-owo" secondAttribute="bottom" constant="31" id="LZe-lS-0bZ"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="4ay-HF-owo" secondAttribute="trailing" constant="53" id="NSQ-xk-vxs"/>
+                            <constraint firstItem="4ay-HF-owo" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="53" id="amx-mP-tpP"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="JMw-FK-6ip" secondAttribute="trailing" constant="130" id="fgw-Ch-7YV"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="bottom" secondItem="JMw-FK-6ip" secondAttribute="bottom" constant="60" id="nHq-lc-AAN"/>
+                            <constraint firstItem="4ay-HF-owo" firstAttribute="top" secondItem="JvJ-GZ-sq6" secondAttribute="top" constant="32" id="u8o-jK-RkM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JvJ-GZ-sq6"/>
                     </view>
+                    <connections>
+                        <outlet property="imageChore" destination="4ay-HF-owo" id="NQO-CD-IQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyv-QG-7p7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="-552"/>
+            <point key="canvasLocation" x="2720.8000000000002" y="-552.70935960591135"/>
         </scene>
         <!--Status-->
         <scene sceneID="DQl-vg-bYo">
@@ -909,9 +960,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leB-ov-ycd">
-                                <rect key="frame" x="87" y="304" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_wood" translatesAutoresizingMaskIntoConstraints="NO" id="leB-ov-ycd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3V-E1-oEF">
                                 <rect key="frame" x="30" y="44" width="315" height="79"/>
@@ -927,10 +977,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pal-dw-M4p" firstAttribute="trailing" secondItem="j3V-E1-oEF" secondAttribute="trailing" constant="30" id="864-oQ-Pzw"/>
+                            <constraint firstAttribute="bottom" secondItem="leB-ov-ycd" secondAttribute="bottom" id="6It-jk-yWI"/>
+                            <constraint firstAttribute="trailing" secondItem="leB-ov-ycd" secondAttribute="trailing" id="BG6-xB-vsm"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="centerX" secondItem="Qbi-Zd-PiH" secondAttribute="centerX" id="cnd-a0-b0b"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="top" secondItem="pal-dw-M4p" secondAttribute="top" id="gm3-ZY-YU1"/>
+                            <constraint firstItem="leB-ov-ycd" firstAttribute="leading" secondItem="Qbi-Zd-PiH" secondAttribute="leading" id="hUn-Dq-BDV"/>
                             <constraint firstItem="j3V-E1-oEF" firstAttribute="leading" secondItem="pal-dw-M4p" secondAttribute="leading" constant="30" id="mft-Ef-iIL"/>
+                            <constraint firstItem="leB-ov-ycd" firstAttribute="top" secondItem="Qbi-Zd-PiH" secondAttribute="top" id="wAp-Xu-n6O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pal-dw-M4p"/>
                     </view>
@@ -987,6 +1040,10 @@
     </scenes>
     <resources>
         <image name="Background_wood" width="626" height="396"/>
+        <image name="Comb_best" width="500" height="500"/>
+        <image name="Comb_good" width="1000" height="800"/>
+        <image name="Nail_best" width="611" height="817"/>
+        <image name="Nail_good" width="800" height="417"/>
         <image name="bed-good" width="500" height="300"/>
         <image name="bed_best" width="930" height="930"/>
         <image name="food_basic" width="2700" height="1504"/>
@@ -1000,8 +1057,8 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SMI-8x-dPU"/>
+        <segue reference="Nza-uV-bVT"/>
         <segue reference="I0h-MS-zPc"/>
-        <segue reference="YqZ-ox-SlI"/>
+        <segue reference="g2R-yg-AZ2"/>
     </inferredMetricsTieBreakers>
 </document>
