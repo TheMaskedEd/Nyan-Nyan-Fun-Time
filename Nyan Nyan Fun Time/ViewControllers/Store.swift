@@ -7,20 +7,21 @@
 //
 
 import UIKit
-var inventory:[String?] = []
-//var inventory1:String? = ""
-//var inventory2:String? = ""
-//var inventory3:String? = ""
-//var inventory4:String? = ""
-//var inventory5:String? = ""
-//var inventory6:String? = ""
-//var inventory7:String? = ""
-//var inventory8:String? = ""
-//var inventory9:String? = ""
-//var inventory10:String? = ""
-//var inventory11:String? = ""
-var money = 2000
+var inventory0:String? = nil
+var inventory1:String? = nil
+var inventory2:String? = nil
+var inventory3:String? = nil
+var inventory4:String? = nil
+var inventory5:String? = nil
+var inventory6:String? = nil
+var inventory7:String? = nil
+var inventory8:String? = nil
+var inventory9:String? = nil
+var inventory10:String? = nil
+var inventory11:String? = nil
+var money = 2000000000
 var status = ""
+var inventoryActive:[String] = []
 class Store: UIViewController {
 // programatically make a view 
     var itemIdentifiers:[Int] = [200,400,450,600,1000,150,250,350,200,400,140,250]
@@ -95,27 +96,29 @@ class Store: UIViewController {
         if money >= priceOfItem{
             switch (productName){
               case "Basic Food":
-                inventory.append(productName)
+                inventory0 = (productName)
               case "Good Food":
-                 inventory.append(productName)
+                 inventory1 = (productName)
               case "Best Food":
-                 inventory.append(productName)
+                 inventory2 = (productName)
+              case "Good Bed":
+                inventory3 = (productName)
               case "Best Bed":
-                 inventory.append(productName)
+                 inventory4 = (productName)
               case "Basic shampoo":
-                 inventory.append(productName)
+                 inventory5 = (productName)
               case "Good shampoo":
-                 inventory.append(productName)
+                 inventory6 = (productName)
               case "Best shampoo":
-                 inventory.append(productName)
-              case "Good nail":
-                 inventory.append(productName)
+                 inventory7 = (productName)
+              case "Good Nail":
+                 inventory8 = (productName)
               case "Best Nail":
-                 inventory.append(productName)
+                 inventory9 = (productName)
               case "Good Brush":
-                 inventory.append(productName)
+                 inventory10 = (productName)
             case "Best Brush":
-                 inventory.append(productName)
+                 inventory11 = (productName)
             default:break
                 
             }
@@ -126,11 +129,46 @@ class Store: UIViewController {
             //figure out how to make a "not enough money" type thing
         }
         
+    
+    func itemsSelect (para0:Bool,para1:Bool,para2:Bool,para3:Bool,para5:String,para6:String,para7:String){
+        switch para0 {
+        case para1:
+            inventoryActive.append(para7)
+            print("selected")
+        case para2:
+            inventoryActive.append(para6)
+            print("selected")
+        case para3:
+            inventoryActive.append(para5)
+            print("selected")
+        default:
+            print ("passthrough")
+        }
+    }
+    if inventory0 == "Basic Food" || inventory1 == "Good Food" || inventory2 == "Best Food"  {
+    itemsSelect(para0: (inventory0 != nil)  || (inventory1 != nil)  || (inventory2 != nil) , para1:
+    (inventory2 == "Best Food") , para2:  (inventory1 == "Good Food"), para3: (inventory0 == "Basic Food"),  para5: ("Basic Food") , para6: ("Good Food"), para7: ("Best Food") )
+    }
+    if inventory3 == "Good Bed" || inventory4 == "Best Bed"   {
+    itemsSelect(para0: (inventory3 != nil)  || (inventory4 != nil)  || (inventory5 != nil) , para1:
+    (inventory3 == "Good Bed") , para2:  (inventory4 == "Best Bed"), para3: (inventory4 == "Best Bed"),  para5: ("Good Bed") , para6: ("Good Bed"), para7: ("Best Bed") )
+    }
+    if inventory5 == "Basic shampoo" || inventory6 == "Good shampoo" || inventory7 == "Best shampoo"  {
+    itemsSelect(para0: (inventory6 != nil)  || (inventory7 != nil)  || (inventory8 != nil) , para1:
+    (inventory5 == "Basic shampoo") , para2:  (inventory6 == "Good shampoo"), para3: (inventory7 == "Best shampoo"),  para5: ("Basic shampoo") , para6: ("Good shampoo"), para7: ("Best shampoo") )
+    }
+    if inventory8 == "Good Nail" || inventory9 == "Best Nail"  {
+    itemsSelect(para0: (inventory8 != nil)  || (inventory9 != nil), para1:
+    (inventory8 == "Good Nail") , para2:  (inventory9 == "Best Nail"), para3: (inventory9 == "Best Nail"),  para5: ("Good Nail") , para6: ("Best Nail"), para7: ("Best Nail") )
     }
     
+    if inventory10 == "Good Brush" || inventory11 == "Best Brush"  {
+    itemsSelect(para0: (inventory10 != nil)  || (inventory11 != nil), para1:
+    (inventory10 == "Good Brush") , para2:  (inventory11 == "Best Brush"), para3: (inventory2 == "Best Brush"),  para5: ("Good Brush") , para6: ("Best Brush"), para7: ("Best Brush") )
+    }
     
   
-    override func viewDidLoad() {
+        func viewDidLoad() {
         super.viewDidLoad()
     // setting 
        
@@ -159,6 +197,4 @@ class Store: UIViewController {
 
 }
 }
-
-
-
+}

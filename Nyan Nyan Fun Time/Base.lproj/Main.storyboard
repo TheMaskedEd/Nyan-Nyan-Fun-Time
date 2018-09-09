@@ -714,33 +714,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMw-FK-6ip">
-                                <rect key="frame" x="130" y="639" width="115" height="79"/>
-                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
-                                <state key="normal" title="Button" backgroundImage="ui_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-HF-owo">
-                                <rect key="frame" x="53" y="76" width="269" height="532"/>
+                                <rect key="frame" x="53" y="76" width="269" height="670"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-9l-n1Y">
-                                <rect key="frame" x="130" y="639" width="115" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="17"/>
-                                <state key="normal" title="Button" backgroundImage="ui_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JMw-FK-6ip" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="130" id="GRm-5k-7h4"/>
-                            <constraint firstItem="JMw-FK-6ip" firstAttribute="top" secondItem="4ay-HF-owo" secondAttribute="bottom" constant="31" id="LZe-lS-0bZ"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="bottom" secondItem="4ay-HF-owo" secondAttribute="bottom" constant="32" id="5s6-9b-BRy"/>
                             <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="4ay-HF-owo" secondAttribute="trailing" constant="53" id="NSQ-xk-vxs"/>
                             <constraint firstItem="4ay-HF-owo" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="53" id="amx-mP-tpP"/>
-                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="JMw-FK-6ip" secondAttribute="trailing" constant="130" id="fgw-Ch-7YV"/>
-                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="bottom" secondItem="JMw-FK-6ip" secondAttribute="bottom" constant="60" id="nHq-lc-AAN"/>
                             <constraint firstItem="4ay-HF-owo" firstAttribute="top" secondItem="JvJ-GZ-sq6" secondAttribute="top" constant="32" id="u8o-jK-RkM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvJ-GZ-sq6"/>
@@ -925,12 +907,12 @@
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="Energy" destination="yon-hZ-jlU" id="Aon-xG-ag4"/>
-                        <outlet property="Happiness" destination="G6h-fh-w5S" id="mtN-AD-PHu"/>
-                        <outlet property="Health" destination="gqU-L3-sHs" id="WDJ-Hx-Wq1"/>
-                        <outlet property="Hunger" destination="FFT-tS-Ac0" id="9Bn-0W-oSc"/>
-                        <outlet property="Hygiene" destination="tjv-eC-FNG" id="SdJ-PQ-ZxV"/>
-                        <outlet property="Pain" destination="Van-0n-l1x" id="gou-YC-qXI"/>
+                        <outlet property="energy" destination="yon-hZ-jlU" id="Kq7-ez-gdy"/>
+                        <outlet property="happiness" destination="G6h-fh-w5S" id="wgl-Co-yY2"/>
+                        <outlet property="health" destination="gqU-L3-sHs" id="GSI-nR-Mg0"/>
+                        <outlet property="hunger" destination="FFT-tS-Ac0" id="aP6-li-W9c"/>
+                        <outlet property="hygiene" destination="tjv-eC-FNG" id="SqE-gI-vr9"/>
+                        <outlet property="pain" destination="Van-0n-l1x" id="WYc-Yr-c8l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SH3-Kh-1b0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1057,8 +1039,8 @@
         <image name="ui_button" width="191" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nza-uV-bVT"/>
-        <segue reference="I0h-MS-zPc"/>
-        <segue reference="g2R-yg-AZ2"/>
+        <segue reference="SMI-8x-dPU"/>
+        <segue reference="4lv-Un-VNE"/>
+        <segue reference="Sg1-Ws-gmQ"/>
     </inferredMetricsTieBreakers>
 </document>

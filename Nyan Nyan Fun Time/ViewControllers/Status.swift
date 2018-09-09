@@ -12,106 +12,59 @@ import UIKit
 // also use a value to decrease progreesbars by .1 every 30 seconds
 
 class Status: UIViewController {
-
-    @IBOutlet weak var Health: UIProgressView!
-  
-    @IBOutlet weak var Happiness: UIProgressView!
+    @IBOutlet var health: UIProgressView!
     
-    @IBOutlet weak var Energy: UIProgressView!
-    
-    @IBOutlet weak var Hygiene: UIProgressView!
+    @IBOutlet var happiness: UIProgressView!
    
-    @IBOutlet weak var Pain: UIProgressView!
+    @IBOutlet var energy: UIProgressView!
     
-    @IBOutlet weak var Hunger: UIProgressView!
+    @IBOutlet var hygiene: UIProgressView!
     
-    @objc func counter (){
-        total -= 1
+   @IBOutlet var pain: UIProgressView!
+   
+    @IBOutlet var hunger: UIProgressView!
+    
+
+    let total = 1
+    var increase = 0
+    var decrease:Double = 10
+    @objc func counter() {
+        self.health.progress = (Float)(decrease/10)
+        self.happiness.progress = (Float)(decrease/10)
+        self.energy.progress = (Float)(decrease/10)
+        self.hygiene.progress = (Float)(decrease/10)
+        self.hunger.progress = (Float)(decrease/10)
+        decrease -= 0.05
     }
-    var total = 10
+   if pain == true {
+   self.pain.progress = (increase/1)
+   increase += .25
+   }
+    if  health == true{
+    
+    
+    
+    
+    var timer:Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        class Specifications {
-           var hunger:Int? = 0
-           var health:Int? = 0
-           var happiness:Int? = 0
-           var energy:Int? = 0
-           var hygiene:Int? = 0
-           var pain:Int? = 0
-        }
+         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:#selector(counter), userInfo: nil, repeats:true)
         
-        let Progressbars = [Health,Happiness,Energy,Hygiene,Pain,Hunger]
-        for Bars in Progressbars {
-            Bars?.setProgress(1, animated: true)
-        }
+        hunger.setProgress(Float(total), animated: true)
+        happiness.setProgress(Float(total), animated: true)
+        energy.setProgress(Float(total), animated: true)
+        hygiene.setProgress(Float(total), animated: true)
+        pain.setProgress(Float(0), animated: true)
+        health.setProgress(Float(total), animated: true)
+    }
     
-            func counter (){
-             total -= 1
-            }
-            
-            let timer = Timer.scheduledTimer(timeInterval: 1, target: UIProgressView(), selector: #selector(Status.counter) , userInfo: nil, repeats:true)
-            
-            
-            
-            
-            
-    //let foodBasic = Specifications()
-         //  foodBasic.hunger = 5
-       //let foodGood = Specifications()
-         //  foodGood.hunger = 7
-           //foodGood.energy =  5
-      // let foodBest = Specifications()
-        //   foodBest.hunger = 8
-          // foodBest.energy = 7
-           //foodBest.happiness = 5
-      // let bedBasic = Specifications()
-        //   bedBasic.energy = 5
-       //let bedGood = Specifications()
-         //  bedGood.energy = 7
-       //let BedBest = Specifications()
-         //  BedBest.energy = 9
-       //let shampoobasic = Specifications()
-         //  shampoobasic.pain = 3
-           //shampoobasic.hygiene = 4
-      // let shampoogood = Specifications()
-        //   shampoogood.hygiene = 6
-     //  let shampoobest = Specifications()
-       //    shampoobest.happiness = 3
-         //  shampoobest.hygiene = 5
-       //let brushBasic = Specifications()
-         //  brushBasic.pain = 4
-      // let brushGood = Specifications()
-        //   brushGood.happiness = 5
-      // let brushBest = Specifications()
-        //   brushBest.happiness = 7
-          // brushBest.health = 3
-      // let nailBasic = Specifications()
-        //   nailBasic.hygiene = 2
-          // nailBasic.pain = 2
-      // let nailGood = Specifications()
-        //   nailGood.hygiene = 3
-      // let nailBest = Specifications()
-        //   nailBest.hygiene = 4
-            
-            
-    func didReceiveMemoryWarning() {
+
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
- }
 }
+
+
 
