@@ -715,15 +715,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ay-HF-owo">
-                                <rect key="frame" x="53" y="76" width="269" height="670"/>
+                                <rect key="frame" x="53" y="76" width="269" height="547"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vux-ZN-TYc">
+                                <rect key="frame" x="103" y="661" width="169" height="79"/>
+                                <fontDescription key="fontDescription" name="ArcadeClassic" family="ArcadeClassic" pointSize="29"/>
+                                <state key="normal" title="press here" backgroundImage="ui_button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressHere:" destination="hdS-Sw-f8z" eventType="touchUpInside" id="azg-Cp-5xn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="bottom" secondItem="4ay-HF-owo" secondAttribute="bottom" constant="32" id="5s6-9b-BRy"/>
+                            <constraint firstItem="Vux-ZN-TYc" firstAttribute="top" secondItem="4ay-HF-owo" secondAttribute="bottom" constant="38" id="Gfz-EZ-aUm"/>
                             <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="4ay-HF-owo" secondAttribute="trailing" constant="53" id="NSQ-xk-vxs"/>
                             <constraint firstItem="4ay-HF-owo" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="53" id="amx-mP-tpP"/>
+                            <constraint firstItem="Vux-ZN-TYc" firstAttribute="leading" secondItem="JvJ-GZ-sq6" secondAttribute="leading" constant="103" id="axi-dn-uvZ"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="bottom" secondItem="Vux-ZN-TYc" secondAttribute="bottom" constant="38" id="ftd-ZF-TD4"/>
                             <constraint firstItem="4ay-HF-owo" firstAttribute="top" secondItem="JvJ-GZ-sq6" secondAttribute="top" constant="32" id="u8o-jK-RkM"/>
+                            <constraint firstItem="JvJ-GZ-sq6" firstAttribute="trailing" secondItem="Vux-ZN-TYc" secondAttribute="trailing" constant="103" id="uaR-tv-CUA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JvJ-GZ-sq6"/>
                     </view>

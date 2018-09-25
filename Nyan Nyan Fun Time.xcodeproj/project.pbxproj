@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		814CA94320DAA02600DE7884 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814CA94220DAA02600DE7884 /* SpriteKit.framework */; };
+		817CB55221582DDA00D46CA1 /* model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 817CB55021582DDA00D46CA1 /* model.xcdatamodeld */; };
 		818D8E1320DAB3CA00D01848 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1220DAB3CA00D01848 /* MainPage.swift */; };
 		818D8E1620DAB48000D01848 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1520DAB48000D01848 /* Activity.swift */; };
 		818D8E1820DAB4A300D01848 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D8E1720DAB4A300D01848 /* Status.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		814CA94220DAA02600DE7884 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		817CB55121582DDA00D46CA1 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		818D8E1220DAB3CA00D01848 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		818D8E1520DAB48000D01848 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		818D8E1720DAB4A300D01848 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		81F2589320D7B72C00D3EBC5 = {
 			isa = PBXGroup;
 			children = (
+				817CB55021582DDA00D46CA1 /* model.xcdatamodeld */,
 				81F2589E20D7B72C00D3EBC5 /* Nyan Nyan Fun Time */,
 				81F258B320D7B72C00D3EBC5 /* Nyan Nyan Fun TimeTests */,
 				81F258BE20D7B72C00D3EBC5 /* Nyan Nyan Fun TimeUITests */,
@@ -341,6 +344,7 @@
 				818D8E1E20DAC82400D01848 /* Chore.swift in Sources */,
 				81F258A020D7B72C00D3EBC5 /* AppDelegate.swift in Sources */,
 				81FB03F420DAA92A00B94042 /* Game3.swift in Sources */,
+				817CB55221582DDA00D46CA1 /* model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +636,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		817CB55021582DDA00D46CA1 /* model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				817CB55121582DDA00D46CA1 /* model.xcdatamodel */,
+			);
+			currentVersion = 817CB55121582DDA00D46CA1 /* model.xcdatamodel */;
+			path = model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 81F2589420D7B72C00D3EBC5 /* Project object */;
 }
